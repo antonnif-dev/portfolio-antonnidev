@@ -1,0 +1,39 @@
+.rodape {
+  background-color: #1741BF;
+  padding: 1rem;
+  font-size: 0.875rem;
+}
+
+.rodape__container {
+  display: flex;
+  justify-content: center;
+}
+
+.rodape img {
+  width: 2.5rem;
+  height: auto;
+}
+
+.rodape__assinatura {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .navbar__nomeCompleto {
+    font-size: 2rem;
+  }
+
+  .titulos {
+    font-size: 1.5rem;
+  }
+
+  .sobreMim {
+    font-size: 1rem;
+    margin: 0 3rem;
+  }
+
+  .carouselContainer__itens {
+    min-width: 40vw;
+  }
+}

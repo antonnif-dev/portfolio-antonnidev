@@ -1,0 +1,26 @@
+.sobreMim {
+  background-color: #579AF2;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 15px;
+  border-radius: 0.5rem;
+}
+
+ /* animação */
+
+.animar {
+  opacity: 0;
+  transform: translateX(200px);
+  filter: blur(10px);
+  transition: all 1s;
+}
+
+.animar-visivel {
+  opacity: 1;
+  transform: translateX(0);
+  filter: blur(0);
+}

@@ -1,0 +1,61 @@
+.modal-dialog {}
+
+.modalCompleto {
+    display: flex;
+    align-items: center;
+    max-width: 90%;
+}
+
+.modal-content {
+    height: 100vw;
+
+}
+
+.modal-header {}
+
+.modal-titulo {}
+
+.modal-body {
+    background-color: black;
+    display: flex;
+    gap: 30px;
+
+}
+
+.body__imagens {
+    width: 40%;
+
+}
+
+.body__imagem {
+    width: 100%;
+}
+
+.body__imagens iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.body__tecnologias {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 65%;
+    margin: 5px;
+    padding: 5px;
+    justify-content: center;
+}
+
+.body__tecnologia {
+    width: 80px;
+}
+
+.body__descricao {
+    color: white;
+    width: 60%;
+}
+
+
+.modal-footer {
+    background-color: white;
+}

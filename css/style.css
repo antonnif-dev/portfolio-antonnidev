@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+:root {
+  --bg-body: #111827;
+  --bg-nav-rodape: #F3F4F6;
+  --elementos: #60A5FA;
+
+  --bg-body-noturno: #F9FAFB;
+  --bg-nav-rodape-noturno: #1F2937;
+  --elementos-noturno: #3B82F6;
+}
+
+/* Animação scroll */
+@keyframes fireScroll {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes blueScroll {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  50% {
+    background-position: 100% 100%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
+}
