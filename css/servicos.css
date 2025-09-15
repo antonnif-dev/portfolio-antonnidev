@@ -1,0 +1,78 @@
+.servicos {
+  padding: 40px 20px 10px;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.servicos h2 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.servicos .subtitulo {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto 50px auto;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: nowrap;
+}
+
+.card {
+  background: #f1f1f1;
+  border-radius: 15px;
+  padding: 20px 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  flex: 1;
+  cursor: pointer;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin: 15px 0;
+  color: #333;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 15px auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  color: white;
+}
+
+/* Cores dos ícones */
+.bg-azul { background: #2563eb; }
+.bg-verde { background: #22c55e; }
+.bg-roxo { background: #7c3aed; }
+
+/* Hover e clique */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  background: #f0f4ff; /* cor leve no hover. Alterar de cor entre temas */
+}
+
+.card:active {
+  background: #e0e7ff; /* cor ao clicar/pressionar. Alterar de cor entre temas */
+  transform: scale(0.98);
+}

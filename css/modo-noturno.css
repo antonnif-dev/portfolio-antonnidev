@@ -1,6 +1,20 @@
+/* Variáveis de cores */
+:root {
+  --bg-body: #f5f5f5;
+  --bg-nav-rodape: #0000ff;
+  --elementos: #ffffff;
+
+  --bg-body-noturno: #121212;
+  --bg-nav-rodape-noturno: #1c1c1c;
+  --elementos-noturno: #222222;
+}
+
+/* -------------------- */
 /* Tema light */
+/* -------------------- */
 [data-bs-theme="light"] body {
   background-color: var(--bg-body);
+  color: black;
 }
 
 [data-bs-theme="light"] .navbar,
@@ -8,14 +22,32 @@
   background-color: var(--bg-nav-rodape);
 }
 
-[data-bs-theme="light"] .titulos {
+[data-bs-theme="light"] .titulos,
+[data-bs-theme="light"] h2,
+[data-bs-theme="light"] h5,
+[data-bs-theme="light"] p,
+[data-bs-theme="light"] .descricao__subtitulo {
   color: black;
 }
 
-[data-bs-theme="light"] .sobreMim {
+[data-bs-theme="light"] .sobreMim,
+[data-bs-theme="light"] .projetos,
+[data-bs-theme="light"] .projetosAutorais,
+[data-bs-theme="light"] .card {
   background-color: var(--elementos);
 }
 
+[data-bs-theme="light"] .track__botao {
+  background-color: #0072ff;
+  color: white;
+  border: none;
+}
+
+[data-bs-theme="light"] .track__botao:hover {
+  background-color: #005fcc;
+}
+
+/* Scrollbar */
 [data-bs-theme="light"]::-webkit-scrollbar {
   width: 14px;
 }
@@ -37,9 +69,12 @@
   box-shadow: 0 0 8px rgba(0, 114, 255, 0.4);
 }
 
+/* -------------------- */
 /* Tema dark */
+/* -------------------- */
 [data-bs-theme="dark"] body {
   background-color: var(--bg-body-noturno);
+  color: white;
 }
 
 [data-bs-theme="dark"] .navbar,
@@ -47,14 +82,33 @@
   background-color: var(--bg-nav-rodape-noturno);
 }
 
-[data-bs-theme="dark"] .titulos {
+[data-bs-theme="dark"] .titulos,
+[data-bs-theme="dark"] h2,
+[data-bs-theme="dark"] h5,
+[data-bs-theme="dark"] p,
+[data-bs-theme="dark"] .descricao__subtitulo {
   color: white;
 }
 
-[data-bs-theme="dark"] .sobreMim {
+[data-bs-theme="dark"] .sobreMim,
+[data-bs-theme="dark"] .projetos,
+[data-bs-theme="dark"] .projetosAutorais,
+[data-bs-theme="dark"] .card {
   background-color: var(--elementos-noturno);
+  border: 1px solid #444;
 }
 
+[data-bs-theme="dark"] .track__botao {
+  background-color: #555;
+  color: white;
+  border: none;
+}
+
+[data-bs-theme="dark"] .track__botao:hover {
+  background-color: #777;
+}
+
+/* Scrollbar dark */
 [data-bs-theme="dark"]::-webkit-scrollbar {
   width: 14px;
 }
@@ -75,4 +129,17 @@
   border-radius: 10px;
   border: 3px solid #1a1a1a;
   box-shadow: 0 0 10px rgba(255, 100, 0, 0.6);
+}
+
+/* -------------------- */
+/* Animações scroll */
+@keyframes blueScroll {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes fireScroll {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
 }

@@ -11,45 +11,7 @@
 </head>
 
 <body data-bs-theme="light">
-    <nav class="navbar">
-        <div class="navbar__topo">
-            <div>
-                <nav class="navbar">
-                    <div class="container-fluid">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <img src="./assets/hamburguer.png" alt="" width="35px">
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="projetos.html">Projetos</a></li>
-                            <li><a class="dropdown-item" href="sobreMim.html">Sobre mim</a></li>
-                            <li><a class="dropdown-item" href="certificados.html">Certificados</a></li>
-                            <li><a class="dropdown-item" href="#contato">Contato</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-            <h1 class="navbar__nomeCompleto">Antonni Carlos de Freitas Moreira</h1>
-            <a class="navbar__modoEscuro" href="#">
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" role="switch" id="modoNoturno">
-                    <label class="form-check-label" for="modoNoturno">Modo Noturno</label>
-                </div>
-            </a>
-        </div>
-
-        <div class="navbar__corpo">
-            <div class="navbar__tecnologias">
-                <img class="navbar__itens" src="./assets/Tecnologias/html.png" alt="HTML">
-                <img class="navbar__itens" src="./assets/Tecnologias/css.png" alt="CSS">
-                <img class="navbar__itens" src="./assets/Tecnologias/javascript.png" alt="JavaScript">
-                <img class="navbar__itens" src="./assets/Tecnologias/bootstrap.png" alt="Bootstrap">
-                <img class="navbar__itens" src="./assets/tecnologias/tailwind.png" alt="Tailwind">
-                <img class="navbar__itens" src="./assets/Tecnologias/react.png" alt="React">
-            </div>
-            <h4 class="navbar_subtitulo">Desenvolvedor Front end</h4>
-        </div>
-    </nav>
+    <div id="navbar"></div>
 
     <div class="projetos">
         <h1 class="titulos">Projetos</h1>
@@ -136,8 +98,44 @@
             <button id="botaoAvancar">|</button>
         </div>
     </div>
-
     <a href="projetos.html">Mais Projetos</a>
+
+    <section id="servicos" class="servicos">
+        <div class="servicos__container">
+            <h2>O que eu posso criar para você:</h2>
+            <p class="servicos__subtitulo">
+                Sites modernos, apps funcionais e soluções digitais que unem design, performance e acessibilidade.
+            </p>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="icon bg-azul">🌐</div>
+                    <h3>Criação de Sites</h3>
+                    <p>
+                        Landing pages, sites institucionais e portfólios com design moderno,
+                        responsivos e otimizados para SEO.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="icon bg-verde">📱</div>
+                    <h3>Aplicativos Mobile</h3>
+                    <p>
+                        Desenvolvimento de apps mobile-first com experiência fluida e
+                        integração com APIs modernas.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="icon bg-roxo">💻</div>
+                    <h3>Aplicações Web</h3>
+                    <p>
+                        Sistemas web completos com autenticação, painéis administrativos e
+                        integração com banco de dados.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <div class="sobreMim animar">
         <h1 class="titulos">Sobre mim</h1>
@@ -146,32 +144,7 @@
         <a href="sobreMim.html">Saiba mais sobre mim</a>
     </div>
 
-    <footer class="rodape" id="contato">
-        <div class="rodape__container">
-            <section class="">
-                <a href="https://www.instagram.com/antonni.freitas/">
-                    <img src="./assets/redes-sociais/instagram.svg" alt="">
-                </a>
-
-                <a href="https://github.com/antonnifreitas">
-                    <img src="./assets/redes-sociais/github.svg" alt="">
-                </a>
-
-                <a href="https://www.linkedin.com/in/antonni-carlos-de-freitas-moreira-moreira-3a374b339/">
-                    <img src="./assets/redes-sociais/linkedin.svg" alt="">
-                </a>
-
-                <a
-                    href="mailto:antonnipessoal@gmail.com?subject=Contato&body=Olá,%20gostaria%20de%20mais%20informações%20sobre%20seu%20trabalho."><img
-                        src="./assets/email.svg" alt=""></a>
-
-            </section>
-        </div>
-
-        <div class="rodape__assinatura">
-            <p>© 2025: Desenvolvido por AntonniF</p>
-        </div>
-    </footer>
+    <div id="footer"></div>
 
     <!-- Modais Projetos -->
     <div class="modal fade" id="modalProjetos1" tabindex="-1" aria-labelledby="modalProjetosLexlink" aria-hidden="true">
@@ -184,7 +157,7 @@
                 <div class="modal-body">
                     <div class="body__imagens">
                         <img class="body__imagem" src="./assets/projetos/lex-link.jpeg" alt="Página principal Lex Link">
-                        <!--<img class="body__imagem" src="./assets/projetos/lex-link.jpeg" alt="Página principal Lex Link">-->
+                        <img class="body__imagem" src="./assets/projetos/lex-link.jpeg" alt="Página principal Lex Link">
                     </div>
                     <div class="body__tecnologias">
                         <img class="body__tecnologia" src="./assets/tecnologias/react.png" alt="react">
@@ -200,9 +173,7 @@
                         <h3>Lex Link:</h3>
                         <p>é uma plataforma web que conecta empresas que
                             demandam diligências jurídicas a parceiros que as executam, sob supervisão de um
-                            administrador. Desenvolvi a interface do sistema com foco em usabilidade, clareza e
-                            responsividade, estruturando páginas específicas para cada tipo de usuário e garantindo uma
-                            navegação simples e eficiente.</p>
+                            administrador.</p>
 
                         <p> No backend, fui responsável por estruturar as principais lógicas do sistema, como o fluxo de
                             aceitação de diligências, controle de usuários e distribuição das tarefas. Para isso,
