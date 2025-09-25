@@ -10,13 +10,25 @@ body {
 }
 
 :root {
-  --bg-body: #111827;
-  --bg-nav-rodape: #F3F4F6;
-  --elementos: #60A5FA;
+  /* Font-size */
+  --fs-pequena: 1rem;
+  --fs-media: 1.5rem;
+  --fs-grande: 3rem;
 
-  --bg-body-noturno: #F9FAFB;
-  --bg-nav-rodape-noturno: #1F2937;
-  --elementos-noturno: #3B82F6;
+  /* Font-family */
+  --fonte-titulos: "Georgia", serif;
+  --fonte-subtitulos: "Arial", sans-serif;
+  --fonte-cards: "Courier New", monospace;
+
+  /*
+Arial, Helvetica, sans-serif
+Times New Roman, Times, serif
+Courier New, Courier, monospace
+Verdana, Geneva, sans-serif
+Georgia, serif
+Trebuchet MS, sans-serif
+Impact, Charcoal, sans-serif
+  */
 }
 
 /* Animação scroll */

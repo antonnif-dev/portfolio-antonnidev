@@ -32,22 +32,25 @@
 }
 
 .body__imagens iframe {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .body__tecnologias {
     display: flex;
     flex-direction: column;
     background-color: white;
-    height: 65%;
-    margin: 5px;
-    padding: 5px;
-    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.body__tecnologias p {
+    text-align: center;
+    font-size: 0.8rem;
 }
 
 .body__tecnologia {
-    width: 80px;
+    width: 30px;
 }
 
 .body__descricao {
@@ -55,6 +58,20 @@
     width: 60%;
 }
 
+.body__descricao p {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 5px;
+    color: white;
+    background-color: white; /* Futuramente aplicar cor na letra */
+}
+
+.titulos-modal {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 5px;
+    color: white;
+}
 
 .modal-footer {
     background-color: white;

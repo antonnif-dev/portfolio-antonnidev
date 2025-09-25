@@ -1,18 +1,24 @@
 .titulos {
-  font-size: 30px;
+  font-family: var(--fonte-titulos);
+  font-size: 2rem;
   text-align: center;
-  margin-top: 5px;
+  margin: 15px 0;
+}
+
+.subtitulos {
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 .projetos {
   color: white;
   margin: 0 3px;
+  padding: 0 0.5rem;
 }
 
 .projetosCarousel {
   max-width: 1000px;
   margin: 10px auto;
-  padding: 0 10px;
   position: relative;
 }
 
@@ -81,11 +87,8 @@
 }
 
 .descricao__titulo {
+  color: black !important;
   font-size: 16px;
-}
-
-.descricao__subtitulo {
-  font-size: 12px;
 }
 
 .track__botao {

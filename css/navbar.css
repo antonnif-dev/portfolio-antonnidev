@@ -42,8 +42,16 @@
 
 .navbar__tecnologias {
   display: flex;
-  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   
+}
+
+.navbar__modoEscuro .form-check {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*

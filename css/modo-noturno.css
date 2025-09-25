@@ -1,7 +1,7 @@
 /* Variáveis de cores */
 :root {
   --bg-body: #f5f5f5;
-  --bg-nav-rodape: #0000ff;
+  --bg-nav-rodape: #3b3beb;
   --elementos: #ffffff;
 
   --bg-body-noturno: #121212;
@@ -9,9 +9,7 @@
   --elementos-noturno: #222222;
 }
 
-/* -------------------- */
 /* Tema light */
-/* -------------------- */
 [data-bs-theme="light"] body {
   background-color: var(--bg-body);
   color: black;
@@ -25,8 +23,7 @@
 [data-bs-theme="light"] .titulos,
 [data-bs-theme="light"] h2,
 [data-bs-theme="light"] h5,
-[data-bs-theme="light"] p,
-[data-bs-theme="light"] .descricao__subtitulo {
+[data-bs-theme="light"] p {
   color: black;
 }
 
@@ -69,9 +66,7 @@
   box-shadow: 0 0 8px rgba(0, 114, 255, 0.4);
 }
 
-/* -------------------- */
 /* Tema dark */
-/* -------------------- */
 [data-bs-theme="dark"] body {
   background-color: var(--bg-body-noturno);
   color: white;
@@ -85,8 +80,7 @@
 [data-bs-theme="dark"] .titulos,
 [data-bs-theme="dark"] h2,
 [data-bs-theme="dark"] h5,
-[data-bs-theme="dark"] p,
-[data-bs-theme="dark"] .descricao__subtitulo {
+[data-bs-theme="dark"] p {
   color: white;
 }
 
@@ -131,7 +125,7 @@
   box-shadow: 0 0 10px rgba(255, 100, 0, 0.6);
 }
 
-/* -------------------- */
+
 /* Animações scroll */
 @keyframes blueScroll {
   0% { background-position: 0% 50%; }
