@@ -11,6 +11,7 @@ body {
 
 :root {
   /* Font-size */
+  --fs-titulos: 2rem;
   --fs-pequena: 1rem;
   --fs-media: 1.5rem;
   --fs-grande: 3rem;
@@ -19,6 +20,10 @@ body {
   --fonte-titulos: "Georgia", serif;
   --fonte-subtitulos: "Arial", sans-serif;
   --fonte-cards: "Courier New", monospace;
+
+  /* Font-family */
+  --cinza-titulo: #333;
+  --cinza-subtitulo: #555;
 
   /*
 Arial, Helvetica, sans-serif

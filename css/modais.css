@@ -16,18 +16,18 @@
 .modal-titulo {}
 
 .modal-body {
+    display: flex;
     background-color: black;
     display: flex;
-    gap: 30px;
-
+    gap: 3%;
 }
 
 .body__imagens {
-    width: 40%;
-
+    flex: 35%;
+    column-gap: 5px;
 }
 
-.body__imagem {
+.body__imagem {    
     width: 100%;
 }
 
@@ -37,11 +37,12 @@
 }
 
 .body__tecnologias {
+    flex: 10%;
     display: flex;
     flex-direction: column;
     background-color: white;
     align-items: center;
-    padding: 10px 0;
+    padding: 20px 0;    
 }
 
 .body__tecnologias p {
@@ -54,16 +55,16 @@
 }
 
 .body__descricao {
+    flex: 45%;
     color: white;
     width: 60%;
 }
 
 .body__descricao p {
-    font-size: 1rem;
+    font-size: var(--fs-pequena);
     text-align: center;
     margin-top: 5px;
-    color: white;
-    background-color: white; /* Futuramente aplicar cor na letra */
+    color: white !important;
 }
 
 .titulos-modal {

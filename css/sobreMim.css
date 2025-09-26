@@ -1,6 +1,7 @@
 .sobreMim {
   background-size: cover;
   background-position: center;
+  background-color: white !important;
   border: solid 1px rgba(128, 128, 128, 0.438);
   color: white;
   text-align: center;

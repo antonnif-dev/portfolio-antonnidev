@@ -12,8 +12,14 @@
   gap: 5px;
 }
 
+.container-fluid p {
+  display: flex;
+  font-family: var(--fonte-cards);
+}
+
 .navbar__nomeCompleto {
-  font-size: 30px;
+  font-family: var(--fonte-subtitulos);
+  font-size: 3rem;
   text-align: center;
 }
 
@@ -32,7 +38,8 @@
 
 .navbar_subtitulo {
   padding: 10px 0;
-  font-size: 20px;
+  font-size: 2rem;
+  font-family: var(--fonte-titulos);
 }
 
 .navbar__itens {
