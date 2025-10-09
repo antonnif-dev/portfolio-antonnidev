@@ -14,7 +14,7 @@
 
 .container-fluid p {
   display: flex;
-  font-family: var(--fonte-cards);
+  font-family: var(--fonte-subtitulos);
 }
 
 .navbar__nomeCompleto {
@@ -43,7 +43,8 @@
 }
 
 .navbar__itens {
-  width: 40px;
+  margin: 3px;
+  width: 30px;
   height: auto;
 }
 
@@ -51,8 +52,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  
+  gap: 8px;
+  border-radius: 5px;
 }
 
 .navbar__modoEscuro .form-check {
@@ -60,8 +61,6 @@
   flex-direction: column;
   align-items: center;
 }
-
-/*
 
 @media screen and (min-width: 601px) {
   .navbar__nomeCompleto {

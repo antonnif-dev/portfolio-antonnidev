@@ -1,7 +1,7 @@
 /* Variáveis de cores */
 :root {
   --bg-body: #f5f5f5;
-  --bg-nav-rodape: #3b3beb;
+  --bg-nav-rodape: #473dcc;
   --elementos: #ffffff;
 
   --bg-body-noturno: #121212;
@@ -75,6 +75,10 @@
 [data-bs-theme="dark"] .navbar,
 [data-bs-theme="dark"] .rodape {
   background-color: var(--bg-nav-rodape-noturno);
+}
+
+[data-bs-theme="dark"] .navbar__tecnologias {
+  background-color: var(--bg-body);
 }
 
 [data-bs-theme="dark"] .titulos,

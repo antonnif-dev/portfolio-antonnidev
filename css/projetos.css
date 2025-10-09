@@ -47,7 +47,7 @@
   box-sizing: border-box;
   background: #f1f1f1;
   border-radius: 8px;
-  padding: 10px;
+  padding: 7px;
   text-align: center;
   user-select: none;
   cursor: grab;
@@ -127,4 +127,12 @@
 
 .projetosAutorais h1 {
   margin-top: 20px;
+}
+
+[data-snack-id] {
+  width: 100%;
+  max-width: 800px;
+  height: 600px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
 }

@@ -1,10 +1,23 @@
-// =======================
-// Carousel de Projetos
-// =======================
 const track = document.querySelector('.projetosCarousel__track');
 const botaoAvancar = document.getElementById('botaoAvancar');
 const botaoVoltar = document.getElementById('botaoVoltar');
-const itens = track ? track.children : [];
+const itens = track ? Array.from(track.children) : [];
+
+// Função para embaralhar (Fisher-Yates)
+function embaralhar(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
+// Reordena os itens do carrossel de forma aleatória
+if (track && itens.length > 0) {
+  const itensEmbaralhados = embaralhar(itens);
+  track.innerHTML = "";
+  itensEmbaralhados.forEach(item => track.appendChild(item));
+}
 
 // Função para calcular largura do item
 function itemLargura() {
@@ -79,9 +92,7 @@ if (track) {
   });
 }
 
-// =======================
 // Animação de elementos (IntersectionObserver)
-// =======================
 const observador = new IntersectionObserver((entradas) => {
   entradas.forEach((entrada) => {
     if (entrada.isIntersecting) {
@@ -97,9 +108,7 @@ elementos.forEach((elemento) => {
   observador.observe(elemento);
 });
 
-// =======================
 // Modo Noturno / Light
-// =======================
 const body = document.body;
 const modoSwitch = document.getElementById("modoNoturno");
 
