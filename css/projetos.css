@@ -45,7 +45,7 @@
   flex-shrink: 0;
   scroll-snap-align: start;
   box-sizing: border-box;
-  background: #f1f1f1;
+  background: #f1f1f1;  
   border-radius: 8px;
   padding: 7px;
   text-align: center;
@@ -71,6 +71,7 @@
   width: 100%;
   height: 200px; /* Imagem do card projetos */
   border-radius: 6px;
+  border: #000 solid 1px;
 }
 
 @media screen and (max-width: 1024px) and (min-width: 601px) {

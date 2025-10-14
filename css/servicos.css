@@ -41,9 +41,8 @@
 }
 
 .card p {
-  font-size: var(--fs-pequena);
+  font-size: 0.9rem;
   color: var(--cinza-subtitulo);
-  line-height: 1.5;
 }
 
 .icon {
