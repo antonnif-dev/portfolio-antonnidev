@@ -3,6 +3,66 @@ const botaoAvancar = document.getElementById('botaoAvancar');
 const botaoVoltar = document.getElementById('botaoVoltar');
 const itens = track ? Array.from(track.children) : [];
 
+// ======== CARROSSEL VERTICAL (Modal) ========
+
+const trackModal = document.querySelector('.projetosCarouselModal__track');
+const botaoModalAvancar = document.querySelector('.botaoModalAvancar');
+const botaoModalVoltar = document.querySelector('.botaoModalVoltar');
+const itensModal = trackModal ? Array.from(trackModal.children) : [];
+
+function itemAlturaModal() {
+  return itensModal[0].offsetHeight + 12; // altura + gap
+}
+
+function avancarModal() {
+  if (trackModal) trackModal.scrollTop += itemAlturaModal();
+}
+
+function voltarModal() {
+  if (trackModal) trackModal.scrollTop -= itemAlturaModal();
+}
+
+// Botões
+if (botaoModalAvancar && botaoModalVoltar) {
+  botaoModalAvancar.addEventListener('click', () => {
+    avancarModal();
+  });
+  botaoModalVoltar.addEventListener('click', () => {
+    voltarModal();
+  });
+}
+
+// Drag vertical
+let isDownModal = false, startYModal, scrollTopInicialModal;
+
+if (trackModal) {
+  trackModal.addEventListener('mousedown', (e) => {
+    isDownModal = true;
+    trackModal.classList.add('arrastando');
+    startYModal = e.pageY - trackModal.offsetTop;
+    scrollTopInicialModal = trackModal.scrollTop;
+  });
+
+  trackModal.addEventListener('mouseleave', () => {
+    isDownModal = false;
+    trackModal.classList.remove('arrastando');
+  });
+
+  trackModal.addEventListener('mouseup', () => {
+    isDownModal = false;
+    trackModal.classList.remove('arrastando');
+  });
+
+  trackModal.addEventListener('mousemove', (e) => {
+    if (!isDownModal) return;
+    e.preventDefault();
+    const y = e.pageY - trackModal.offsetTop;
+    const deslocamento = (y - startYModal) * 1.5;
+    trackModal.scrollTop = scrollTopInicialModal - deslocamento;
+  });
+}
+
+
 // Função para embaralhar (Fisher-Yates)
 function embaralhar(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -12,7 +72,7 @@ function embaralhar(array) {
   return array;
 }
 
-// Reordena os itens do carrossel de forma aleatória
+// Deixar os itens do carrossel de forma aleatória
 if (track && itens.length > 0) {
   const itensEmbaralhados = embaralhar(itens);
   track.innerHTML = "";
@@ -56,9 +116,11 @@ function pararRolagem() {
 if (botaoAvancar && botaoVoltar) {
   botaoAvancar.addEventListener('click', avancar);
   botaoVoltar.addEventListener('click', voltar);
-  botaoAvancar.addEventListener('mouseenter', () => iniciarRolagem('avancar'));
+  botaoAvancar.addEventListener('mouseenter', () =>
+    iniciarRolagem('avancar'));
   botaoAvancar.addEventListener('mouseleave', pararRolagem);
-  botaoVoltar.addEventListener('mouseenter', () => iniciarRolagem('voltar'));
+  botaoVoltar.addEventListener('mouseenter', () =>
+    iniciarRolagem('voltar'));
   botaoVoltar.addEventListener('mouseleave', pararRolagem);
 }
 

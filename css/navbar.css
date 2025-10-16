@@ -1,7 +1,6 @@
 .navbar {
   display: flex;
   flex-direction: column;
-  background-color: var(--bg-nav-rodape);
 }
 
 .navbar__topo {

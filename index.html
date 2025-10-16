@@ -132,10 +132,8 @@
 
 
     <div class="sobreMim animar">
-        <h1 class="titulos">Sobre mim</h1>
         <p>“Não é a linguagem de programação que define o programador,
             mas sim sua lógica.” – David Ribeiro Guilherme </p>
-        <a href="sobreMim.html">Saiba mais sobre mim</a>
     </div>
 
     <div id="footer"></div>
@@ -149,13 +147,23 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="body__imagens">
-                        <img class="body__imagem hover-zoom" src="./assets/projetos/lex-link.jpeg"
-                            alt="Página do app Lex Link">
-                        <img class="body__imagem hover-zoom" src="./assets/projetos/lex-link.jpeg"
-                            alt="Página do app Lex Link">
-                        <img class="body__imagem hover-zoom" src="./assets/projetos/lex-link.jpeg"
-                            alt="Página do app Lex Link">
+                    <div class="projetosCarouselModal">
+                        <button class="botaoModalVoltar">▲</button>
+                        <div class="projetosCarouselModal__track">
+                            <div class="trackModal__item">
+                                <img class="track__imagem" src="./assets/projetos/lex-link.png" alt="..." style="width: 100px;">
+                            </div>
+                            <div class="trackModal__item">
+                                <img class="track__imagem" src="./assets/projetos/lex-link.jpeg" alt="..." style="width: 100px;">
+                            </div>
+                            <div class="trackModal__item">
+                                <img class="track__imagem" src="./assets/projetos/lex-link.png" alt="..." style="width: 100px;">
+                            </div>
+                            <div class="trackModal__item">
+                                <img class="track__imagem" src="./assets/projetos/lex-link.jpeg" alt="..." style="width: 100px;">
+                            </div>
+                        </div>
+                        <button class="botaoModalAvancar">▼</button>
                     </div>
                     <div class="body__tecnologias">
                         <div class="tecnologias">
@@ -192,24 +200,18 @@
                     </div>
                     <div class="body__descricao">
                         <h3 class="titulos-modal">Lex Link:</h3>
-                        <p>é uma plataforma web que conecta empresas que
-                            demandam diligências jurídicas a parceiros que as executam, sob supervisão de um
-                            administrador.</p>
-
-                        <p> No backend, fui responsável por estruturar as principais lógicas do sistema, como o fluxo de
-                            aceitação de diligências, controle de usuários e distribuição das tarefas. Para isso,
-                            utilizei inteligência artificial como apoio técnico na criação dos códigos, otimizando o
-                            tempo de desenvolvimento e garantindo consistência e funcionalidade na aplicação.</p>
-
-                        <p> O Lex Link foi criado para resolver problemas comuns na comunicação entre empresas e
-                            prestadores, como desorganização na distribuição de tarefas, falta de retorno aos parceiros
-                            e ausência de controle sobre as diligências. Com o sistema, todo o fluxo é centralizado: as
-                            empresas cadastram diligências, os parceiros demonstram interesse e o administrador define
-                            quem executará a tarefa, com notificações automáticas para todos os envolvidos.</p>
-
-                        <p> Atuo continuamente na evolução do projeto, sempre buscando performance, organização e uma
-                            experiência de uso fluida.</p>
-                        <button onclick="window.location.href='https://mulheres-hip-hop-teste2.vercel.app/'">
+                        <p>O Lex Link é uma plataforma web que aproxima empresas que precisam realizar diligências
+                            jurídicas de parceiros especializados prontos para executá-las, tudo de forma simples,
+                            organizada e supervisionada por um administrador.</p>
+                        <p>O sistema foi desenvolvido para eliminar falhas de comunicação e desorganização no fluxo de
+                            tarefas jurídicas. Ele centraliza todo o processo em um só ambiente: as empresas cadastram
+                            diligências, os parceiros demonstram interesse, e o administrador define quem executará cada
+                            tarefa, com notificações automáticas garantindo que todos acompanhem o andamento em tempo
+                            real.</p>
+                        <p>Continuo aprimorando o Lex Link para deixá-lo cada vez mais intuitivo, eficiente e agradável
+                            de usar, tornando a conexão entre empresas e parceiros uma experiência fluida e confiável.
+                        </p>
+                        <button onclick="window.open('https://mulheres-no-hip-hop.vercel.app/')">
                             Acessar Projeto
                         </button>
                     </div>
@@ -232,62 +234,38 @@
                     <div class="body__imagens">
                         <img class="body__imagem hover-zoom" src="./assets/projetos/quiz-container1.png"
                             alt="Página do site Quiz Front-end">
+                        <!--
                         <img class="body__imagem hover-zoom" src="./assets/projetos/quiz-container2.png"
                             alt="Página do site Quiz Front-end">
+                        -->
                     </div>
                     <div class="body__tecnologias">
                         <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/react.png" alt="react">
-                            <p>React</p>
+                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/html5.png" alt="react">
+                            <p>Html</p>
                         </div>
                         <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/react-native.png"
+                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/css3.png"
                                 alt="react native">
-                            <p>React Native</p>
+                            <p>Css</p>
                         </div>
                         <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/tailwind.png"
+                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/javascript.png"
                                 alt="tailwind">
-                            <p>Tailwind</p>
-                        </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/expo.png" alt="expo js">
-                            <p>Expo JS</p>
-                        </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/node.png" alt="node js">
-                            <p>Node JS</p>
-                        </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/express.png" alt="express">
-                            <p>Express JS</p>
-                        </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/banco-de-dados.png"
-                                alt="banco de dados">
-                            <p>Banco de Dados</p>
+                            <p>JavaScript</p>
                         </div>
                     </div>
                     <div class="body__descricao">
                         <h3 class="titulos-modal">Lex Link:</h3>
-                        <p>é uma plataforma web que conecta empresas que
-                            demandam diligências jurídicas a parceiros que as executam, sob supervisão de um
-                            administrador.</p>
-
-                        <p> No backend, fui responsável por estruturar as principais lógicas do sistema, como o fluxo de
-                            aceitação de diligências, controle de usuários e distribuição das tarefas. Para isso,
-                            utilizei inteligência artificial como apoio técnico na criação dos códigos, otimizando o
-                            tempo de desenvolvimento e garantindo consistência e funcionalidade na aplicação.</p>
-
-                        <p> O Lex Link foi criado para resolver problemas comuns na comunicação entre empresas e
-                            prestadores, como desorganização na distribuição de tarefas, falta de retorno aos parceiros
-                            e ausência de controle sobre as diligências. Com o sistema, todo o fluxo é centralizado: as
-                            empresas cadastram diligências, os parceiros demonstram interesse e o administrador define
-                            quem executará a tarefa, com notificações automáticas para todos os envolvidos.</p>
-
-                        <p> Atuo continuamente na evolução do projeto, sempre buscando performance, organização e uma
-                            experiência de uso fluida.</p>
-                        <button onclick="window.location.href='https://mulheres-hip-hop-teste2.vercel.app/'">
+                        <p>O Quiz Frontend é um jogo interativo voltado para quem quer testar e aprimorar seus
+                            conhecimentos em HTML, CSS e JavaScript de forma divertida.</p>
+                        <p>O projeto foi desenvolvido utilizando manipulação de DOM, arrays de perguntas dinâmicas e
+                            feedback instantâneo para cada resposta. A aplicação utiliza lógica condicional, eventos e
+                            temporizadores para simular uma experiência gamificada completa, com pontuação e resultados
+                            personalizados ao final.</p>
+                        <p>É um projeto em constante evolução, pensado para unir aprendizado e entretenimento, tornando
+                            o estudo de frontend mais envolvente e prático.</p>
+                        <button onclick="window.open('https://quiz-frontend-blond.vercel.app/')">
                             Acessar Projeto
                         </button>
                     </div>
@@ -299,7 +277,8 @@
         </div>
     </div>
 
-    <div class="modal fade" id="modalProjetos3" tabindex="-1" aria-labelledby="modalProjetosMulheres" aria-hidden="true">
+    <div class="modal fade" id="modalProjetos3" tabindex="-1" aria-labelledby="modalProjetosMulheres"
+        aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -315,13 +294,13 @@
                     </div>
                     <div class="body__tecnologias">
                         <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/react.png" alt="react">
-                            <p>React</p>
+                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/html.png" alt="react">
+                            <p>Html</p>
                         </div>
                         <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/react-native.png"
+                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/css3.png"
                                 alt="react native">
-                            <p>React Native</p>
+                            <p>Css</p>
                         </div>
                         <div class="tecnologias">
                             <img class="body__tecnologia__imagem" src="./assets/tecnologias/tailwind.png"
@@ -329,43 +308,23 @@
                             <p>Tailwind</p>
                         </div>
                         <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/expo.png" alt="expo js">
-                            <p>Expo JS</p>
-                        </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/node.png" alt="node js">
-                            <p>Node JS</p>
-                        </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/express.png" alt="express">
-                            <p>Express JS</p>
-                        </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/banco-de-dados.png"
-                                alt="banco de dados">
-                            <p>Banco de Dados</p>
+                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/javascript.png"
+                                alt="expo js">
+                            <p>JavaScript</p>
                         </div>
                     </div>
                     <div class="body__descricao">
                         <h3 class="titulos-modal">Lex Link:</h3>
-                        <p>é uma plataforma web que conecta empresas que
-                            demandam diligências jurídicas a parceiros que as executam, sob supervisão de um
-                            administrador.</p>
-
-                        <p> No backend, fui responsável por estruturar as principais lógicas do sistema, como o fluxo de
-                            aceitação de diligências, controle de usuários e distribuição das tarefas. Para isso,
-                            utilizei inteligência artificial como apoio técnico na criação dos códigos, otimizando o
-                            tempo de desenvolvimento e garantindo consistência e funcionalidade na aplicação.</p>
-
-                        <p> O Lex Link foi criado para resolver problemas comuns na comunicação entre empresas e
-                            prestadores, como desorganização na distribuição de tarefas, falta de retorno aos parceiros
-                            e ausência de controle sobre as diligências. Com o sistema, todo o fluxo é centralizado: as
-                            empresas cadastram diligências, os parceiros demonstram interesse e o administrador define
-                            quem executará a tarefa, com notificações automáticas para todos os envolvidos.</p>
-
-                        <p> Atuo continuamente na evolução do projeto, sempre buscando performance, organização e uma
-                            experiência de uso fluida.</p>
-                        <button onclick="window.location.href='https://mulheres-hip-hop-teste2.vercel.app/'">
+                        <p>O projeto Mulheres no Hip Hop nasceu para celebrar e fortalecer a presença feminina na
+                            cultura hip hop, valorizando artistas, produtoras e criadoras que fazem parte desse
+                            movimento.</p>
+                        <p>O site foi construído com foco em acessibilidade e experiência visual envolvente, reunindo
+                            seções dinâmicas com biografias, vídeos, entrevistas e conteúdos educativos. A plataforma
+                            busca oferecer uma navegação fluida, responsiva e inspiradora, desenvolvida com HTML, CSS e
+                            JavaScript voltados para performance e identidade visual marcante.</p>
+                        <p>Continuo aprimorando o projeto com novas seções e conteúdos, mantendo viva a proposta de
+                            empoderar mulheres e conectar talentos dentro do universo do hip hop.</p>
+                        <button onclick="window.open('https://mulheres-no-hip-hop.vercel.app/')">
                             Acessar Projeto
                         </button>
                     </div>
@@ -385,11 +344,23 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="body__imagens">
-                        <img class="body__imagem hover-zoom" src="./assets/projetos/blocos-container1.png"
-                            alt="Página do site Quiz Front-end">
-                        <img class="body__imagem hover-zoom" src="./assets/projetos/blocos-container2.png"
-                            alt="Página do site Quiz Front-end">
+                    <div class="projetosCarouselModal">
+                        <button class="botaoModalVoltar">▲</button>
+                        <div class="projetosCarouselModal__track">
+                            <div class="trackModal__item">
+                                <img class="track__imagem" src="./assets/projetos/blocos-container1.png" alt="...">
+                            </div>
+                            <div class="trackModal__item">
+                                <img class="track__imagem" src="./assets/projetos/blocos-container2.png" alt="...">
+                            </div>
+                            <div class="trackModal__item">
+                                <img class="track__imagem" src="./assets/projetos/blocos-container3.png" alt="...">
+                            </div>
+                            <div class="trackModal__item">
+                                <img class="track__imagem" src="./assets/projetos/blocos-container4.png" alt="...">
+                            </div>
+                        </div>
+                        <button class="botaoModalAvancar">▼</button>
                     </div>
                     <div class="body__tecnologias">
                         <div class="tecnologias">
@@ -411,14 +382,6 @@
                             <p>Expo JS</p>
                         </div>
                         <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/node.png" alt="node js">
-                            <p>Node JS</p>
-                        </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/express.png" alt="express">
-                            <p>Express JS</p>
-                        </div>
-                        <div class="tecnologias">
                             <img class="body__tecnologia__imagem" src="./assets/tecnologias/banco-de-dados.png"
                                 alt="banco de dados">
                             <p>Banco de Dados</p>
@@ -426,24 +389,15 @@
                     </div>
                     <div class="body__descricao">
                         <h3 class="titulos-modal">Lex Link:</h3>
-                        <p>é uma plataforma web que conecta empresas que
-                            demandam diligências jurídicas a parceiros que as executam, sob supervisão de um
-                            administrador.</p>
-
-                        <p> No backend, fui responsável por estruturar as principais lógicas do sistema, como o fluxo de
-                            aceitação de diligências, controle de usuários e distribuição das tarefas. Para isso,
-                            utilizei inteligência artificial como apoio técnico na criação dos códigos, otimizando o
-                            tempo de desenvolvimento e garantindo consistência e funcionalidade na aplicação.</p>
-
-                        <p> O Lex Link foi criado para resolver problemas comuns na comunicação entre empresas e
-                            prestadores, como desorganização na distribuição de tarefas, falta de retorno aos parceiros
-                            e ausência de controle sobre as diligências. Com o sistema, todo o fluxo é centralizado: as
-                            empresas cadastram diligências, os parceiros demonstram interesse e o administrador define
-                            quem executará a tarefa, com notificações automáticas para todos os envolvidos.</p>
-
-                        <p> Atuo continuamente na evolução do projeto, sempre buscando performance, organização e uma
-                            experiência de uso fluida.</p>
-                        <button onclick="window.location.href='https://mulheres-hip-hop-teste2.vercel.app/'">
+                        <p>O Blocos de Carnaval BH é um aplicativo leve e divertido que ajuda foliões a encontrarem os
+                            melhores blocos de rua durante o carnaval de Belo Horizonte.</p>
+                        <p>O sistema foi desenvolvido com React Native, integrando dados locais e APIs para exibir
+                            informações atualizadas sobre blocos, horários, locais e trajetos. O foco está na
+                            experiência mobile fluida, com navegação simples, pesquisa rápida e mapas interativos,
+                            garantindo que o usuário encontre o bloco certo no momento certo.</p>
+                        <p>O projeto segue em expansão, buscando oferecer cada vez mais funcionalidades e tornar a
+                            vivência do carnaval de BH mais conectada e organizada.</p>
+                        <button onclick="window.open('https://mulheres-no-hip-hop.vercel.app/')">
                             Acessar Projeto
                         </button>
                     </div>
@@ -463,11 +417,23 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="body__imagens">
-                        <img class="body__imagem hover-zoom" src="./assets/projetos/acerto-container1.png"
-                            alt="Página do site Quiz Front-end">
-                        <img class="body__imagem hover-zoom" src="./assets/projetos/acerto-container2.png"
-                            alt="Página do site Quiz Front-end">
+                    <div class="projetosCarouselModal">
+                        <button class="botaoModalVoltar">▲</button>
+                        <div class="projetosCarouselModal__track">
+                            <div class="trackModal__item">
+                                <img class="track__imagem" src="./assets/projetos/blocos-container1.png" alt="...">
+                            </div>
+                            <div class="trackModal__item">
+                                <img class="track__imagem" src="./assets/projetos/acerto-container2.png" alt="...">
+                            </div>
+                            <div class="trackModal__item">
+                                <img class="track__imagem" src="./assets/projetos/acerto-container3.png" alt="...">
+                            </div>
+                            <div class="trackModal__item">
+                                <img class="track__imagem" src="./assets/projetos/acerto-container4.png" alt="...">
+                            </div>
+                        </div>
+                        <button class="botaoModalAvancar">▼</button>
                     </div>
                     <div class="body__tecnologias">
                         <div class="tecnologias">
@@ -488,42 +454,22 @@
                             <img class="body__tecnologia__imagem" src="./assets/tecnologias/expo.png" alt="expo js">
                             <p>Expo JS</p>
                         </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/node.png" alt="node js">
-                            <p>Node JS</p>
-                        </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/express.png" alt="express">
-                            <p>Express JS</p>
-                        </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/banco-de-dados.png"
-                                alt="banco de dados">
-                            <p>Banco de Dados</p>
-                        </div>
                     </div>
                     <div class="body__descricao">
-                        <h3 class="titulos-modal">Lex Link:</h3>
-                        <p>é uma plataforma web que conecta empresas que
-                            demandam diligências jurídicas a parceiros que as executam, sob supervisão de um
-                            administrador.</p>
-
-                        <p> No backend, fui responsável por estruturar as principais lógicas do sistema, como o fluxo de
-                            aceitação de diligências, controle de usuários e distribuição das tarefas. Para isso,
-                            utilizei inteligência artificial como apoio técnico na criação dos códigos, otimizando o
-                            tempo de desenvolvimento e garantindo consistência e funcionalidade na aplicação.</p>
-
-                        <p> O Lex Link foi criado para resolver problemas comuns na comunicação entre empresas e
-                            prestadores, como desorganização na distribuição de tarefas, falta de retorno aos parceiros
-                            e ausência de controle sobre as diligências. Com o sistema, todo o fluxo é centralizado: as
-                            empresas cadastram diligências, os parceiros demonstram interesse e o administrador define
-                            quem executará a tarefa, com notificações automáticas para todos os envolvidos.</p>
-
-                        <p> Atuo continuamente na evolução do projeto, sempre buscando performance, organização e uma
-                            experiência de uso fluida.</p>
-                        <button onclick="window.location.href='https://mulheres-hip-hop-teste2.vercel.app/'">
+                        <h3 class="titulos-modal">Acerto de contas:</h3>
+                        <p>é um aplicativo criado para ajudar pessoas a organizarem suas finanças
+                            pessoais de forma prática e visual, permitindo o controle de gastos e cobranças em um único
+                            lugar.</p>
+                        <p>O app foi desenvolvido em React Native com armazenamento local via AsyncStorage, permitindo
+                            ao usuário criar tabelas personalizadas com descrições, valores, prazos e anexos. Cada item
+                            pode ser marcado como quitado ou removido, e o sistema organiza automaticamente os dados em
+                            histórico e ativos, com foco em segurança e performance mesmo offline.</p>
+                        <p>Continuo otimizando o app com novas funcionalidades, transições suaves e uma experiência
+                            mobile-first cada vez mais intuitiva.</p>
+                        <!--
+                        <button onclick="window.open('https://mulheres-no-hip-hop.vercel.app/')">
                             Acessar Projeto
-                        </button>
+                        </button>   -->
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -549,13 +495,13 @@
                     </div>
                     <div class="body__tecnologias">
                         <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/react.png" alt="react">
-                            <p>React</p>
+                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/html5.png" alt="react">
+                            <p>Html</p>
                         </div>
                         <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/react-native.png"
+                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/css3.png"
                                 alt="react native">
-                            <p>React Native</p>
+                            <p>Css</p>
                         </div>
                         <div class="tecnologias">
                             <img class="body__tecnologia__imagem" src="./assets/tecnologias/tailwind.png"
@@ -563,43 +509,23 @@
                             <p>Tailwind</p>
                         </div>
                         <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/expo.png" alt="expo js">
-                            <p>Expo JS</p>
-                        </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/node.png" alt="node js">
-                            <p>Node JS</p>
-                        </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/express.png" alt="express">
-                            <p>Express JS</p>
-                        </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/banco-de-dados.png"
-                                alt="banco de dados">
-                            <p>Banco de Dados</p>
+                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/javascript.png"
+                                alt="tailwind">
+                            <p>JavaScript</p>
                         </div>
                     </div>
                     <div class="body__descricao">
-                        <h3 class="titulos-modal">Lex Link:</h3>
-                        <p>é uma plataforma web que conecta empresas que
-                            demandam diligências jurídicas a parceiros que as executam, sob supervisão de um
-                            administrador.</p>
-
-                        <p> No backend, fui responsável por estruturar as principais lógicas do sistema, como o fluxo de
-                            aceitação de diligências, controle de usuários e distribuição das tarefas. Para isso,
-                            utilizei inteligência artificial como apoio técnico na criação dos códigos, otimizando o
-                            tempo de desenvolvimento e garantindo consistência e funcionalidade na aplicação.</p>
-
-                        <p> O Lex Link foi criado para resolver problemas comuns na comunicação entre empresas e
-                            prestadores, como desorganização na distribuição de tarefas, falta de retorno aos parceiros
-                            e ausência de controle sobre as diligências. Com o sistema, todo o fluxo é centralizado: as
-                            empresas cadastram diligências, os parceiros demonstram interesse e o administrador define
-                            quem executará a tarefa, com notificações automáticas para todos os envolvidos.</p>
-
-                        <p> Atuo continuamente na evolução do projeto, sempre buscando performance, organização e uma
-                            experiência de uso fluida.</p>
-                        <button onclick="window.location.href='https://mulheres-hip-hop-teste2.vercel.app/'">
+                        <h3 class="titulos-modal">DoeBem:</h3>
+                        <p>é uma plataforma pensada para aproximar quem quer ajudar de quem precisa de ajuda,
+                            facilitando o processo de doações e engajamento social de forma transparente e prática.</p>
+                        <p>O sistema foi desenvolvido para resolver a dificuldade de encontrar campanhas confiáveis e
+                            descentralizadas. Ele permite que usuários cadastrem e divulguem causas, com controle de
+                            status, categorias e atualizações em tempo real. A interface foi projetada para ser
+                            intuitiva e segura, com formulários organizados e integração com armazenamento de dados
+                            local ou remoto, conforme a evolução do projeto.</p>
+                        <p>O objetivo é continuar expandindo o DoeBem, aprimorando a usabilidade e tornando a
+                            experiência de doar mais acessível, humana e transformadora.</p>
+                        <button onclick="window.open('https://doebem.vercel.app/')">
                             Acessar Projeto
                         </button>
                     </div>
@@ -627,57 +553,31 @@
                     </div>
                     <div class="body__tecnologias">
                         <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/react.png" alt="react">
-                            <p>React</p>
+                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/html5.png" alt="react">
+                            <p>Html</p>
                         </div>
                         <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/react-native.png"
+                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/css3.png"
                                 alt="react native">
-                            <p>React Native</p>
+                            <p>Css</p>
                         </div>
                         <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/tailwind.png"
+                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/javascript.png"
                                 alt="tailwind">
-                            <p>Tailwind</p>
-                        </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/expo.png" alt="expo js">
-                            <p>Expo JS</p>
-                        </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/node.png" alt="node js">
-                            <p>Node JS</p>
-                        </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/express.png" alt="express">
-                            <p>Express JS</p>
-                        </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/banco-de-dados.png"
-                                alt="banco de dados">
-                            <p>Banco de Dados</p>
+                            <p>JavaScript</p>
                         </div>
                     </div>
                     <div class="body__descricao">
-                        <h3 class="titulos-modal">Lex Link:</h3>
-                        <p>é uma plataforma web que conecta empresas que
-                            demandam diligências jurídicas a parceiros que as executam, sob supervisão de um
-                            administrador.</p>
-
-                        <p> No backend, fui responsável por estruturar as principais lógicas do sistema, como o fluxo de
-                            aceitação de diligências, controle de usuários e distribuição das tarefas. Para isso,
-                            utilizei inteligência artificial como apoio técnico na criação dos códigos, otimizando o
-                            tempo de desenvolvimento e garantindo consistência e funcionalidade na aplicação.</p>
-
-                        <p> O Lex Link foi criado para resolver problemas comuns na comunicação entre empresas e
-                            prestadores, como desorganização na distribuição de tarefas, falta de retorno aos parceiros
-                            e ausência de controle sobre as diligências. Com o sistema, todo o fluxo é centralizado: as
-                            empresas cadastram diligências, os parceiros demonstram interesse e o administrador define
-                            quem executará a tarefa, com notificações automáticas para todos os envolvidos.</p>
-
-                        <p> Atuo continuamente na evolução do projeto, sempre buscando performance, organização e uma
-                            experiência de uso fluida.</p>
-                        <button onclick="window.location.href='https://mulheres-hip-hop-teste2.vercel.app/'">
+                        <h3 class="titulos-modal">Gerador de Currículo:</h3>
+                        <p>O Gerador de Currículo Online foi criado para facilitar a vida de quem precisa montar um
+                            currículo profissional rapidamente, sem depender de editores complexos.</p>
+                        <p>O sistema utiliza formulários dinâmicos com JavaScript para coletar informações do usuário e
+                            gerar automaticamente um currículo formatado, pronto para download ou impressão. A aplicação
+                            trabalha com armazenamento local (localStorage) e manipulação de DOM para gerar o documento
+                            de forma ágil e responsiva.</p>
+                        <p>O projeto continua recebendo melhorias para oferecer mais modelos, recursos de personalização
+                            e uma experiência ainda mais simples para quem busca destacar-se no mercado de trabalho.</p>
+                        <button onclick="window.open('https://gerador-curriculo-orcin.vercel.app/')">
                             Acessar Projeto
                         </button>
                     </div>
@@ -705,13 +605,13 @@
                     </div>
                     <div class="body__tecnologias">
                         <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/react.png" alt="react">
-                            <p>React</p>
+                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/html5.png" alt="react">
+                            <p>Html</p>
                         </div>
                         <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/react-native.png"
+                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/css3.png"
                                 alt="react native">
-                            <p>React Native</p>
+                            <p>Css</p>
                         </div>
                         <div class="tecnologias">
                             <img class="body__tecnologia__imagem" src="./assets/tecnologias/tailwind.png"
@@ -719,43 +619,23 @@
                             <p>Tailwind</p>
                         </div>
                         <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/expo.png" alt="expo js">
-                            <p>Expo JS</p>
-                        </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/node.png" alt="node js">
-                            <p>Node JS</p>
-                        </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/express.png" alt="express">
-                            <p>Express JS</p>
-                        </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/banco-de-dados.png"
-                                alt="banco de dados">
-                            <p>Banco de Dados</p>
+                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/javascript.png"
+                                alt="tailwind">
+                            <p>JavaScript</p>
                         </div>
                     </div>
                     <div class="body__descricao">
-                        <h3 class="titulos-modal">Lex Link:</h3>
-                        <p>é uma plataforma web que conecta empresas que
-                            demandam diligências jurídicas a parceiros que as executam, sob supervisão de um
-                            administrador.</p>
-
-                        <p> No backend, fui responsável por estruturar as principais lógicas do sistema, como o fluxo de
-                            aceitação de diligências, controle de usuários e distribuição das tarefas. Para isso,
-                            utilizei inteligência artificial como apoio técnico na criação dos códigos, otimizando o
-                            tempo de desenvolvimento e garantindo consistência e funcionalidade na aplicação.</p>
-
-                        <p> O Lex Link foi criado para resolver problemas comuns na comunicação entre empresas e
-                            prestadores, como desorganização na distribuição de tarefas, falta de retorno aos parceiros
-                            e ausência de controle sobre as diligências. Com o sistema, todo o fluxo é centralizado: as
-                            empresas cadastram diligências, os parceiros demonstram interesse e o administrador define
-                            quem executará a tarefa, com notificações automáticas para todos os envolvidos.</p>
-
-                        <p> Atuo continuamente na evolução do projeto, sempre buscando performance, organização e uma
-                            experiência de uso fluida.</p>
-                        <button onclick="window.location.href='https://mulheres-hip-hop-teste2.vercel.app/'">
+                        <h3 class="titulos-modal">ABC do Professor:</h3>
+                        <p>O ABC do Professor é um projeto educacional que auxilia docentes na criação de atividades,
+                            planejamentos e recursos interativos voltados ao ensino infantil e fundamental.</p>
+                        <p>A plataforma foi desenvolvida com foco em usabilidade e organização de conteúdo, oferecendo
+                            seções para criação e personalização de materiais pedagógicos, além de recursos que utilizam
+                            JavaScript para manipulação dinâmica de dados e armazenamento local para salvar planos e
+                            atividades. Tudo foi pensado para facilitar o trabalho do professor de forma moderna e
+                            eficiente.</p>
+                        <p>Continuo evoluindo o ABC do Professor com novas ferramentas e ideias, sempre buscando tornar
+                            a rotina docente mais leve, criativa e produtiva.</p>
+                        <button onclick="window.open('https://abc-do-professor.vercel.app/')">
                             Acessar Projeto
                         </button>
                     </div>
