@@ -1,0 +1,31 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antonnif-dev/portfolio-antonnidev.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/antonnif-dev/portfolio-antonnidev/issues"
+  },
+  "homepage": "https://github.com/antonnif-dev/portfolio-antonnidev#readme",
+  "devDependencies": {
+    "tailwindcss": "^4.1.14",
+    "vite": "^7.1.10"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.14"
+  }
+}

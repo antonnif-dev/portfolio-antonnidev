@@ -1,3 +1,12 @@
+.projetosPagina {
+  color: white;
+  margin: 0 0.5rem;
+}
+
+.projetos__apps {
+    margin: 1rem 0;
+}
+
 .cardProjetos {
     width: 1rem;
 }

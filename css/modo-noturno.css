@@ -21,6 +21,7 @@
 }
 
 [data-bs-theme="light"] .titulos,
+[data-bs-theme="light"] .descricao__titulo,
 [data-bs-theme="light"] h2,
 [data-bs-theme="light"] h5,
 [data-bs-theme="light"] p {
@@ -82,6 +83,7 @@
 }
 */
 [data-bs-theme="dark"] .titulos,
+[data-bs-theme="dark"] .descricao__titulo,
 [data-bs-theme="dark"] h2,
 [data-bs-theme="dark"] h5,
 [data-bs-theme="dark"] p {
@@ -105,6 +107,7 @@
 [data-bs-theme="dark"] .track__botao:hover {
   background-color: #777;
 }
+
 
 /* Scrollbar dark */
 [data-bs-theme="dark"]::-webkit-scrollbar {

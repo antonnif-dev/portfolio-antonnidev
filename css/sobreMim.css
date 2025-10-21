@@ -17,6 +17,15 @@
   color: black !important;
 }
 
+.sobreMim__imagem {
+  width: 12rem;
+}
+
+.sobreMim h4 {
+  font-size: var(--fs-media);
+  color: black !important;
+}
+
  /* animação */
 
 .animar {

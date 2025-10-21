@@ -1,3 +1,18 @@
+.btn-modo-noturno {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.btn-modo-noturno:hover {
+  transform: scale(1.1);
+}
+
 .navbar {
   display: flex;
   flex-direction: column;
@@ -14,6 +29,11 @@
 .container-fluid p {
   display: flex;
   font-family: var(--fonte-subtitulos);
+}
+
+.dropdown-menu li {
+  font-family: var(--fonte-titulos);
+  font-size: var(--fs-pequena);
 }
 
 .navbar__nomeCompleto {

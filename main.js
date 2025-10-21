@@ -168,8 +168,7 @@ const observador = new IntersectionObserver((entradas) => {
 const elementos = document.querySelectorAll('.animar');
 elementos.forEach((elemento) => {
   observador.observe(elemento);
-});
-
+});/*
 // Modo Noturno / Light
 const body = document.body;
 const modoSwitch = document.getElementById("modoNoturno");
@@ -218,5 +217,61 @@ function carregarComponente(seletor, arquivo) {
     .catch(err => console.error(`Erro ao carregar ${arquivo}: `, err));
 }
 
+carregarComponente('#navbar', 'navbar.html');
+carregarComponente('#footer', 'footer.html');
+*/
+
+// ======== MODO NOTURNO / LIGHT ========
+const body = document.body;
+
+// Função para aplicar tema e ajustar ícones (recebe elementos opcionais)
+function aplicarTema(tema, { iconSun, iconMoon } = {}) {
+  body.setAttribute("data-bs-theme", tema);
+  localStorage.setItem("tema", tema);
+
+  if (iconSun) iconSun.style.display = tema === "dark" ? "none" : "inline";
+  if (iconMoon) iconMoon.style.display = tema === "dark" ? "inline" : "none";
+}
+
+// Inicializar tema salvo (sem depender de elementos ainda)
+const temaSalvo = localStorage.getItem("tema") || "light";
+body.style.transition = "background-color 0.3s, color 0.3s";
+aplicarTema(temaSalvo);
+
+// ======== CARREGAR COMPONENTES (ex.: navbar + footer) ========
+function carregarComponente(seletor, arquivo) {
+  fetch(arquivo)
+    .then(response => {
+      if (!response.ok) throw new Error(`Erro ${response.status}`);
+      return response.text();
+    })
+    .then(data => {
+      const container = document.querySelector(seletor);
+      if (!container) throw new Error(`Seletor ${seletor} não encontrado`);
+      container.innerHTML = data;
+
+      // Se for o navbar, reaplique o controle de tema e conecte o botão
+      if (seletor === '#navbar') {
+        const btnToggleLocal = document.getElementById("toggleTheme");
+        const iconSunLocal = document.getElementById("iconSun");
+        const iconMoonLocal = document.getElementById("iconMoon");
+
+        // Aplica o tema atual e atualiza os ícones (passa referências)
+        const temaAtual = localStorage.getItem("tema") || "light";
+        aplicarTema(temaAtual, { iconSun: iconSunLocal, iconMoon: iconMoonLocal });
+
+        // Registra o evento de clique no botão (se existir)
+        if (btnToggleLocal) {
+          btnToggleLocal.addEventListener("click", () => {
+            const novoTema = body.getAttribute("data-bs-theme") === "dark" ? "light" : "dark";
+            aplicarTema(novoTema, { iconSun: iconSunLocal, iconMoon: iconMoonLocal });
+          });
+        }
+      }
+    })
+    .catch(err => console.error(`Erro ao carregar ${arquivo}: `, err));
+}
+
+// Carrega navbar e footer
 carregarComponente('#navbar', 'navbar.html');
 carregarComponente('#footer', 'footer.html');
