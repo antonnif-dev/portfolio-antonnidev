@@ -25,7 +25,7 @@
   flex-wrap: nowrap;
 }
 
-.card {
+.card-servicos {
   background: #ffffff !important;
   border-radius: 15px;
   padding: 10px 10px 0;
@@ -35,12 +35,12 @@
   cursor: pointer;
 }
 
-.card h3 {
+.card-servicos h3 {
   font-size: 1.2rem;
   color: var(--cinza-titulo);
 }
 
-.card p {
+.card-servicos p {
   font-size: 0.9rem;
   color: var(--cinza-subtitulo);
 }
@@ -63,13 +63,13 @@
 .bg-roxo { background: #7c3aed; }
 
 /* Hover e clique */
-.card:hover {
+.card-servicos:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 18px rgba(0,0,0,0.15);
   background: #f0f4ff; /* cor leve no hover. Alterar de cor entre temas */
 }
 
-.card:active {
+.card-servicos:active {
   background: #e0e7ff; /* cor ao clicar/pressionar. Alterar de cor entre temas */
   transform: scale(0.98);
 }

@@ -168,58 +168,7 @@ const observador = new IntersectionObserver((entradas) => {
 const elementos = document.querySelectorAll('.animar');
 elementos.forEach((elemento) => {
   observador.observe(elemento);
-});/*
-// Modo Noturno / Light
-const body = document.body;
-const modoSwitch = document.getElementById("modoNoturno");
-
-// Função para aplicar tema
-function aplicarTema(tema) {
-  body.setAttribute("data-bs-theme", tema);
-  if (modoSwitch) modoSwitch.checked = tema === "dark";
-  localStorage.setItem("tema", tema);
-}
-
-// Inicializar tema salvo
-const temaSalvo = localStorage.getItem("tema") || "light";
-aplicarTema(temaSalvo);
-
-// Transição suave
-body.style.transition = "background-color 0.3s, color 0.3s";
-
-// Evento do switch
-if (modoSwitch) {
-  modoSwitch.addEventListener("change", () => {
-    const temaAtual = modoSwitch.checked ? "dark" : "light";
-    aplicarTema(temaAtual);
-  });
-}
-
-function carregarComponente(seletor, arquivo) {
-  fetch(arquivo)
-    .then(response => response.text())
-    .then(data => {
-      document.querySelector(seletor).innerHTML = data;
-      if (seletor === '#navbar') {
-        // Reaplicar toggle de tema após inserir o HTML
-        const toggle = document.getElementById('modoNoturno');
-        const theme = localStorage.getItem('theme') || 'light';
-        document.body.setAttribute('data-bs-theme', theme);
-        if (toggle) toggle.checked = theme === 'dark';
-
-        toggle?.addEventListener('change', () => {
-          const newTheme = toggle.checked ? 'dark' : 'light';
-          document.body.setAttribute('data-bs-theme', newTheme);
-          localStorage.setItem('theme', newTheme);
-        });
-      }
-    })
-    .catch(err => console.error(`Erro ao carregar ${arquivo}: `, err));
-}
-
-carregarComponente('#navbar', 'navbar.html');
-carregarComponente('#footer', 'footer.html');
-*/
+});
 
 // ======== MODO NOTURNO / LIGHT ========
 const body = document.body;
@@ -269,7 +218,7 @@ function carregarComponente(seletor, arquivo) {
         }
       }
     })
-    .catch(err => console.error(`Erro ao carregar ${arquivo}: `, err));
+    .catch(err => console.error(`Erro ao carregar ${arquivo}:`, err));
 }
 
 // Carrega navbar e footer
