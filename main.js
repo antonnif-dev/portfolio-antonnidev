@@ -1,69 +1,12 @@
+
+// CARROSSEL PRINCIPAL (Horizontal)
+
 const track = document.querySelector('.projetosCarousel__track');
 const botaoAvancar = document.getElementById('botaoAvancar');
 const botaoVoltar = document.getElementById('botaoVoltar');
 const itens = track ? Array.from(track.children) : [];
 
-// ======== CARROSSEL VERTICAL (Modal) ========
-
-const trackModal = document.querySelector('.projetosCarouselModal__track');
-const botaoModalAvancar = document.querySelector('.botaoModalAvancar');
-const botaoModalVoltar = document.querySelector('.botaoModalVoltar');
-const itensModal = trackModal ? Array.from(trackModal.children) : [];
-
-function itemAlturaModal() {
-  return itensModal[0].offsetHeight + 12; // altura + gap
-}
-
-function avancarModal() {
-  if (trackModal) trackModal.scrollTop += itemAlturaModal();
-}
-
-function voltarModal() {
-  if (trackModal) trackModal.scrollTop -= itemAlturaModal();
-}
-
-// Botões
-if (botaoModalAvancar && botaoModalVoltar) {
-  botaoModalAvancar.addEventListener('click', () => {
-    avancarModal();
-  });
-  botaoModalVoltar.addEventListener('click', () => {
-    voltarModal();
-  });
-}
-
-// Drag vertical
-let isDownModal = false, startYModal, scrollTopInicialModal;
-
-if (trackModal) {
-  trackModal.addEventListener('mousedown', (e) => {
-    isDownModal = true;
-    trackModal.classList.add('arrastando');
-    startYModal = e.pageY - trackModal.offsetTop;
-    scrollTopInicialModal = trackModal.scrollTop;
-  });
-
-  trackModal.addEventListener('mouseleave', () => {
-    isDownModal = false;
-    trackModal.classList.remove('arrastando');
-  });
-
-  trackModal.addEventListener('mouseup', () => {
-    isDownModal = false;
-    trackModal.classList.remove('arrastando');
-  });
-
-  trackModal.addEventListener('mousemove', (e) => {
-    if (!isDownModal) return;
-    e.preventDefault();
-    const y = e.pageY - trackModal.offsetTop;
-    const deslocamento = (y - startYModal) * 1.5;
-    trackModal.scrollTop = scrollTopInicialModal - deslocamento;
-  });
-}
-
-
-// Função para embaralhar (Fisher-Yates)
+// Embaralhar itens (Fisher-Yates)
 function embaralhar(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -79,34 +22,25 @@ if (track && itens.length > 0) {
   itensEmbaralhados.forEach(item => track.appendChild(item));
 }
 
-// Função para calcular largura do item
+// Funções utilitárias
 function itemLargura() {
   return itens[0].offsetWidth + 16;
 }
-
-// Funções avançar e voltar
 function avancar() {
   if (track) track.scrollLeft += itemLargura();
 }
-
 function voltar() {
   if (track) track.scrollLeft -= itemLargura();
 }
 
-// Rolagem automática ao passar mouse
+// Rolagem automática ao passar o mouse
 let intervalId = null;
-
 function iniciarRolagem(direcao) {
   pararRolagem();
   intervalId = setInterval(() => {
-    if (direcao === 'avancar') {
-      avancar();
-    } else {
-      voltar();
-    }
+    direcao === 'avancar' ? avancar() : voltar();
   }, 300);
 }
-
 function pararRolagem() {
   clearInterval(intervalId);
   intervalId = null;
@@ -116,17 +50,14 @@ function pararRolagem() {
 if (botaoAvancar && botaoVoltar) {
   botaoAvancar.addEventListener('click', avancar);
   botaoVoltar.addEventListener('click', voltar);
-  botaoAvancar.addEventListener('mouseenter', () =>
-    iniciarRolagem('avancar'));
+  botaoAvancar.addEventListener('mouseenter', () => iniciarRolagem('avancar'));
   botaoAvancar.addEventListener('mouseleave', pararRolagem);
-  botaoVoltar.addEventListener('mouseenter', () =>
-    iniciarRolagem('voltar'));
+  botaoVoltar.addEventListener('mouseenter', () => iniciarRolagem('voltar'));
   botaoVoltar.addEventListener('mouseleave', pararRolagem);
 }
 
-// Drag-to-scroll + snap
+// Drag horizontal (scroll suave)
 let isDown = false, startX, scrollLeftInicial;
-
 if (track) {
   track.addEventListener('mousedown', (e) => {
     isDown = true;
@@ -134,17 +65,14 @@ if (track) {
     startX = e.pageX - track.offsetLeft;
     scrollLeftInicial = track.scrollLeft;
   });
-
   track.addEventListener('mouseleave', () => {
     isDown = false;
     track.classList.remove('arrastando');
   });
-
   track.addEventListener('mouseup', () => {
     isDown = false;
     track.classList.remove('arrastando');
   });
-
   track.addEventListener('mousemove', (e) => {
     if (!isDown) return;
     e.preventDefault();
@@ -154,64 +82,165 @@ if (track) {
   });
 }
 
-// Animação de elementos (IntersectionObserver)
+// CARROSSEL VERTICAL (Modal)
+
+const trackModal = document.querySelector('.projetosCarouselModal__track');
+const botaoModalAvancar = document.querySelector('.botaoModalAvancar');
+const botaoModalVoltar = document.querySelector('.botaoModalVoltar');
+const itensModal = trackModal ? Array.from(trackModal.children) : [];
+
+function itemAlturaModal() {
+  return itensModal[0].offsetHeight + 12;
+}
+function avancarModal() {
+  if (trackModal) trackModal.scrollTop += itemAlturaModal();
+}
+function voltarModal() {
+  if (trackModal) trackModal.scrollTop -= itemAlturaModal();
+}
+
+if (botaoModalAvancar && botaoModalVoltar) {
+  botaoModalAvancar.addEventListener('click', avancarModal);
+  botaoModalVoltar.addEventListener('click', voltarModal);
+}
+
+// Drag vertical
+let isDownModal = false, startYModal, scrollTopInicialModal;
+if (trackModal) {
+  trackModal.addEventListener('mousedown', (e) => {
+    isDownModal = true;
+    trackModal.classList.add('arrastando');
+    startYModal = e.pageY - trackModal.offsetTop;
+    scrollTopInicialModal = trackModal.scrollTop;
+  });
+  trackModal.addEventListener('mouseleave', () => {
+    isDownModal = false;
+    trackModal.classList.remove('arrastando');
+  });
+  trackModal.addEventListener('mouseup', () => {
+    isDownModal = false;
+    trackModal.classList.remove('arrastando');
+  });
+  trackModal.addEventListener('mousemove', (e) => {
+    if (!isDownModal) return;
+    e.preventDefault();
+    const y = e.pageY - trackModal.offsetTop;
+    const deslocamento = (y - startYModal) * 1.5;
+    trackModal.scrollTop = scrollTopInicialModal - deslocamento;
+  });
+}
+
+// ANIMAÇÃO DE ELEMENTOS (IntersectionObserver)
+
 const observador = new IntersectionObserver((entradas) => {
   entradas.forEach((entrada) => {
-    if (entrada.isIntersecting) {
-      entrada.target.classList.add('animar-visivel');
-    } else {
-      entrada.target.classList.remove('animar-visivel');
-    }
+    entrada.target.classList.toggle('animar-visivel', entrada.isIntersecting);
   });
 }, { threshold: 0.3 });
 
-const elementos = document.querySelectorAll('.animar');
-elementos.forEach((elemento) => {
-  observador.observe(elemento);
-});
+document.querySelectorAll('.animar').forEach((el) => observador.observe(el));
 
-// Modo Noturno / Light
-const body = document.body;
-const modoSwitch = document.getElementById("modoNoturno");
+// MODO NOTURNO / LIGHT
 
-// Função para aplicar tema
-function aplicarTema(tema) {
-  body.setAttribute("data-bs-theme", tema);
-  if (modoSwitch) modoSwitch.checked = tema === "dark";
-  localStorage.setItem("tema", tema);
+
+function atualizarIconeTema(tema) {
+  const iconeTema = document.getElementById("iconeTema");
+  if (!iconeTema) return;
+
+  iconeTema.innerHTML = tema === "dark"
+    ? `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+             fill="currentColor" class="size-6">
+         <path fill-rule="evenodd"
+          d="M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6
+             a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69
+             .75.75 0 0 1 .981.98 10.503 10.503 0 0 1-9.694 6.46
+             c-5.799 0-10.5-4.7-10.5-10.5
+             0-4.368 2.667-8.112 6.46-9.694
+             a.75.75 0 0 1 .818.162Z"
+           clip-rule="evenodd" />
+       </svg>`
+    : `<svg xmlns="http://www.w3.org/2000/svg" fill="none"
+             viewBox="0 0 24 24" stroke-width="1.5"
+             stroke="currentColor" class="size-6">
+         <path stroke-linecap="round" stroke-linejoin="round"
+          d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189
+             a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06
+             0 0 1-4.5 0m3.75 2.383a14.406 14.406
+             0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823
+             1.508-2.316a7.5 7.5 0 1 0-7.517 0
+             c.85.493 1.509 1.333 1.509 2.316V18" />
+       </svg>`;
 }
 
-// Inicializar tema salvo
+// Seleção dos botões
+document.getElementById("temaLight")?.addEventListener("click", () => aplicarTema("light"));
+document.getElementById("temaDark")?.addEventListener("click", () => aplicarTema("dark"));
+
+/*
+// Função principal (mantém aplicarTema já existente)
+function atualizarIcones(tema) {
+  if (!botaoLight || !botaoDark) return;
+  if (tema === "dark") {
+    botaoDark.classList.add("oculto");
+    botaoLight.classList.remove("oculto");
+  } else {
+    botaoLight.classList.add("oculto");
+    botaoDark.classList.remove("oculto");
+  }
+}
+*/
+
+function atualizarIcones(tema) {
+  const botaoLight = document.getElementById("temaLight");
+  const botaoDark = document.getElementById("temaDark");
+  if (!botaoLight || !botaoDark) return;
+
+  if (tema === "dark") {
+    botaoDark.classList.add("oculto");
+    botaoLight.classList.remove("oculto");
+  } else {
+    botaoLight.classList.add("oculto");
+    botaoDark.classList.remove("oculto");
+  }
+}
+
+function aplicarTema(tema) {
+  document.body.setAttribute("data-bs-theme", tema);
+  localStorage.setItem("tema", tema);
+  atualizarIcones(tema);
+}
+
+// Inicializa tema salvo
 const temaSalvo = localStorage.getItem("tema") || "light";
 aplicarTema(temaSalvo);
 
-// Transição suave
-body.style.transition = "background-color 0.3s, color 0.3s";
+// Eventos de clique nos botões
+document.addEventListener("click", (e) => {
+  if (e.target.closest("#temaLight")) aplicarTema("light");
+  if (e.target.closest("#temaDark")) aplicarTema("dark");
+});
 
-// Evento do switch
-if (modoSwitch) {
-  modoSwitch.addEventListener("change", () => {
-    const temaAtual = modoSwitch.checked ? "dark" : "light";
-    aplicarTema(temaAtual);
-  });
-}
+// Transição suave
+document.body.style.transition = "background-color 0.3s, color 0.3s";
+
+// CARREGAR COMPONENTES DINÂMICOS (Navbar/Footer)
 
 function carregarComponente(seletor, arquivo) {
   fetch(arquivo)
-    .then(response => response.text())
+    .then(res => res.text())
     .then(data => {
       document.querySelector(seletor).innerHTML = data;
       if (seletor === '#navbar') {
-        // Reaplicar toggle de tema após inserir o HTML
         const toggle = document.getElementById('modoNoturno');
-        const theme = localStorage.getItem('theme') || 'light';
-        document.body.setAttribute('data-bs-theme', theme);
-        if (toggle) toggle.checked = theme === 'dark';
+        const tema = localStorage.getItem('tema') || 'light';
+        aplicarTema(tema);
+        document.body.setAttribute('data-bs-theme', tema);
+        if (toggle) toggle.checked = tema === 'dark';
+        atualizarIconeTema(tema);
 
         toggle?.addEventListener('change', () => {
-          const newTheme = toggle.checked ? 'dark' : 'light';
-          document.body.setAttribute('data-bs-theme', newTheme);
-          localStorage.setItem('theme', newTheme);
+          const novoTema = toggle.checked ? 'dark' : 'light';
+          aplicarTema(novoTema);
         });
       }
     })

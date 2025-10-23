@@ -35,20 +35,4 @@
 }
 
 @media (min-width: 768px) {
-  .navbar__nomeCompleto {
-    font-size: 2rem;
-  }
-
-  .titulos {
-    font-size: 1.5rem;
-  }
-
-  .sobreMim {
-    font-size: 1rem;
-    margin: 0 3rem;
-  }
-
-  .carouselContainer__itens {
-    min-width: 40vw;
-  }
 }

@@ -13,7 +13,7 @@
 .projetos {
   color: white;
   margin: 0 3px;
-  padding: 0 0.5rem;
+  padding: 1rem;
 }
 
 .projetosCarousel {
@@ -45,7 +45,7 @@
   flex-shrink: 0;
   scroll-snap-align: start;
   box-sizing: border-box;
-  background: #f1f1f1;  
+  background: #f1f1f1;
   border-radius: 8px;
   padding: 7px;
   text-align: center;
@@ -57,7 +57,18 @@
   transform: scale(1.04);
 }
 
-@media screen and (max-width: 1024px) and (min-width: 601px) {
+@media (min-width: 769px) and (max-width: 1024px) {
+  .titulos {
+    font-family: var(--fonte-titulos);
+    font-size: 4rem;
+    text-align: center;
+    margin: 15px 0;
+  }
+
+  .subtitulos {
+    font-size: 1.2rem;
+    text-align: center;
+  }
   .track__item {
     flex: 0 0 calc((100% - 16px) / 3);
   }
@@ -69,7 +80,8 @@
 
 .track__imagem {
   width: 100%;
-  height: 200px; /* Imagem do card projetos */
+  height: 200px;
+  /* Imagem do card projetos */
   border-radius: 6px;
   border: #000 solid 1px;
 }
@@ -78,17 +90,6 @@
   .track__imagem {
     height: 480px;
   }
-}
-
-.track__descricao {
-  font-size: 14px;
-  margin: 10px 0;
-  color: #000;
-}
-
-.descricao__titulo {
-  color: var(--cinza-titulo) !important;
-  font-size: 16px;
 }
 
 .track__botao {
