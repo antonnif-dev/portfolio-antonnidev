@@ -4,12 +4,16 @@
     width: 10rem;
 }
 
-.track__descricao h5 {
+.track__descricao {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    color: var(--cinza-titulo) !important;
+    align-items: center;
+}
+
+.track__descricao h5 {
     font-size: var(--fs-media);
+    text-align: center;
+    color: var(--cinza-titulo) !important;
 }
 
 
@@ -26,4 +30,8 @@
     .card__projetos {
         width: 18rem;
     }
+}
+
+.trackProjetos__descricao h5 {
+    text-align: center;
 }
