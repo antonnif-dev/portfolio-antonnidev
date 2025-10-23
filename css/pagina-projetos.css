@@ -1,12 +1,35 @@
-.projetosPagina {
-  color: white;
-  margin: 0 0.5rem;
-}
-
-.projetos__apps {
-    margin: 1rem 0;
-}
-
 .cardProjetos {
     width: 1rem;
+}
+
+.track__descricao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.track__descricao h5 {
+    font-size: var(--fs-media);
+    text-align: center;
+    color: var(--cinza-titulo) !important;
+}
+
+
+.projetosSites,
+.projetosApps,
+.projetosExperimentais {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .card__projetos {
+        width: 18rem;
+    }
+}
+
+.trackProjetos__descricao h5 {
+    text-align: center;
 }

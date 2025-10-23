@@ -5,120 +5,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetos</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="dist/output.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 </head>
 
 <body data-bs-theme="light">
     <div id="navbar"></div>
 
-    <div class="projetosPagina">
-
-        <div class="projetos__apps m-3">
-            <div class="projetosAutorais d-flex row justify-content-center gap-4">
-                <h1 class="titulos">Apps</h1>
-                <div class="w-full max-w-sm" style="width: 11rem;">
+    <div class="projetos">
+        <div class="projetos__apps">
+            <h1 class="titulos">Apps</h1>
+            <div class="projetosApps d-flex justify-content-center">
+                <div class="card__projetos">
                     <img class="track__imagem" src="./assets/projetos/lex-link.jpeg" alt="...">
-                    <div class="track__descricao">
+                    <div class="trackProjetos__descricao">
                         <h5 class="descricao__titulo">Lex Link</h5>
-                    </div>
-                    <button type="button" class="track__botao" data-bs-toggle="modal"
+                        <button type="button" class="track__botao" data-bs-toggle="modal"
                         data-bs-target="#modalProjetos1">Visualizar projeto</button>
+                    </div>                    
                 </div>
-                <div class="w-full max-w-sm" style="width: 11rem;">
+                <div class="card__projetos">
                     <img class="track__imagem" src="./assets/projetos/blocos-capa.png" alt="...">
-                    <div class="track__descricao">
+                    <div class="trackProjetos__descricao">
                         <h5 class="descricao__titulo">Blocos de Carnaval</h5>
-                    </div>
-                    <button type="button" class="track__botao" data-bs-toggle="modal"
+                        <button type="button" class="track__botao" data-bs-toggle="modal"
                         data-bs-target="#modalProjetos4">Visualizar projeto</button>
+                    </div>                    
                 </div>
-                <div class="w-full max-w-sm" style="width: 11rem;">
+                <div class="card__projetos">
                     <img class="track__imagem" src="./assets/projetos/acerto-capa.png" alt="...">
-                    <div class="track__descricao">
+                    <div class="trackProjetos__descricao">
                         <h5 class="descricao__titulo">Acerto de Contas</h5>
-                    </div>
-                    <button type="button" class="track__botao" data-bs-toggle="modal"
+                        <button type="button" class="track__botao" data-bs-toggle="modal"
                         data-bs-target="#modalProjetos5">Visualizar projeto</button>
+                    </div>                    
                 </div>
             </div>
         </div>
 
-        <div class="projetos__sites m-3">
-            <div class="projetosAutorais d-flex row justify-content-center gap-4">
-                <h1 class="titulos">Sites</h1>
-                <div class="w-full max-w-sm" style="width: 11rem;">
-                    <img class="track__imagem" src="./assets/projetos/lex-link.jpeg" alt="...">
-                    <div class="track__descricao">
-                        <h5 class="descricao__titulo">Lex Link</h5>
-                    </div>
-                    <button type="button" class="track__botao" data-bs-toggle="modal"
-                        data-bs-target="#modalProjetos1">Visualizar projeto</button>
+        <div class="projetos__sites">
+            <h1 class="titulos my-4">Sites</h1>
+            <div class="projetosSites d-flex">                
+                <div class="card__projetos">
+                    <img class="track__imagem" src="./assets/projetos/quiz-capa.png" alt="...">
+                    <div class="trackProjetos__descricao">
+                        <h5 class="descricao__titulo">Quiz Front-end</h5>
+                        <button type="button" class="track__botao" data-bs-toggle="modal"
+                        data-bs-target="#modalProjetos2">Visualizar projeto</button>
+                    </div>                    
                 </div>
-                <div class="w-full max-w-sm" style="width: 11rem;">
+                <div class="card__projetos">
                     <img class="track__imagem" src="./assets/projetos/mulheres-capa.png" alt="...">
-                    <div class="track__descricao">
+                    <div class="trackProjetos__descricao">
                         <h5 class="descricao__titulo">Mulheres no Hip Hop</h5>
-                    </div>
-                    <button type="button" class="track__botao" data-bs-toggle="modal"
+                        <button type="button" class="track__botao" data-bs-toggle="modal"
                         data-bs-target="#modalProjetos3">Visualizar projeto</button>
+                    </div>                    
                 </div>
-                <div class="w-full max-w-sm" style="width: 11rem;">
+                <div class="card__projetos">
                     <img class="track__imagem" src="./assets/projetos/doe-capa.png" alt="...">
-                    <div class="track__descricao">
+                    <div class="trackProjetos__descricao">
                         <h5 class="descricao__titulo">Doe Bem</h5>
-                    </div>
-                    <button type="button" class="track__botao" data-bs-toggle="modal"
+                        <button type="button" class="track__botao" data-bs-toggle="modal"
                         data-bs-target="#modalProjetos6">Visualizar projeto</button>
+                    </div>                    
                 </div>
-                <div class="w-full max-w-sm" style="width: 11rem;">
+                <div class="card__projetos">
                     <img class="track__imagem" src="./assets/projetos/gerador-capa.png" alt="...">
-                    <div class="track__descricao">
+                    <div class="trackProjetos__descricao">
                         <h5 class="descricao__titulo">Gerador de Currículo</h5>
-                    </div>
-                    <button type="button" class="track__botao" data-bs-toggle="modal"
+                        <button type="button" class="track__botao" data-bs-toggle="modal"
                         data-bs-target="#modalProjetos7">Visualizar projeto</button>
+                    </div>                    
                 </div>
-                <div class="w-full max-w-sm" style="width: 11rem;">
+                <div class="card__projetos">
                     <img class="track__imagem" src="./assets/projetos/abc-capa.png" alt="...">
-                    <div class="track__descricao">
+                    <div class="trackProjetos__descricao">
                         <h5 class="descricao__titulo">ABC do Professor</h5>
-                    </div>
-                    <button type="button" class="track__botao" data-bs-toggle="modal"
+                        <button type="button" class="track__botao" data-bs-toggle="modal"
                         data-bs-target="#modalProjetos8">Visualizar projeto</button>
+                    </div>                    
                 </div>
             </div>
         </div>
 
-        <div class="projetos__experimentos m-3">
-            <div class="projetosAutorais d-flex row justify-content-center gap-4">
-                <h1 class="titulos">Projetos Experimentos</h1>
-                <div class="w-full max-w-sm" style="width: 11rem;">
-                    <img class="track__imagem" src="./assets/projetos/abc-capa.png" alt="...">
-                    <div class="track__descricao">
-                        <h5 class="descricao__titulo">ABC do Professor</h5>
-                    </div>
-                    <button type="button" class="track__botao" data-bs-toggle="modal"
-                        data-bs-target="#modalProjetos9">Visualizar projeto</button>
+        <div class="projetos__experimentais">
+            <h1 class="titulos my-4">Projetos Experimentais</h1>
+            <div class="projetosExperimentais d-flex justify-content-center gap-4">                
+                <div class="card__projetos">
+                    <img class="track__imagem" src="./assets/projetos/lex-link.jpeg" alt="...">
+                    <div class="trackProjetos__descricao">
+                        <h5 class="descricao__titulo">Lex Link</h5>
+                        <button type="button" class="track__botao" data-bs-toggle="modal"
+                        data-bs-target="#modalProjetos1">Visualizar projeto</button>
+                    </div>                    
                 </div>
-
-                <div class="w-full max-w-sm" style="width: 11rem;">
-                    <img class="track__imagem" src="./assets/projetos/abc-capa.png" alt="...">
-                    <div class="track__descricao">
-                        <h5 class="descricao__titulo">ABC do Professor</h5>
-                    </div>
-                    <button type="button" class="track__botao" data-bs-toggle="modal"
-                        data-bs-target="#modalProjetos10">Visualizar projeto</button>
+                <div class="card__projetos">
+                    <img class="track__imagem" src="./assets/projetos/blocos-capa.png" alt="...">
+                    <div class="trackProjetos__descricao">
+                        <h5 class="descricao__titulo">Blocos de Carnaval</h5>
+                        <button type="button" class="track__botao" data-bs-toggle="modal"
+                        data-bs-target="#modalProjetos4">Visualizar projeto</button>
+                    </div>                    
                 </div>
-
-                <div class="w-full max-w-sm" style="width: 11rem;">
-                    <img class="track__imagem" src="./assets/projetos/abc-capa.png" alt="...">
-                    <div class="track__descricao">
-                        <h5 class="descricao__titulo">ABC do Professor</h5>
-                    </div>
-                    <button type="button" class="track__botao" data-bs-toggle="modal"
-                        data-bs-target="#modalProjetos11">Visualizar projeto</button>
+                <div class="card__projetos">
+                    <img class="track__imagem" src="./assets/projetos/acerto-capa.png" alt="...">
+                    <div class="trackProjetos__descricao">
+                        <h5 class="descricao__titulo">Acerto de Contas</h5>
+                        <button type="button" class="track__botao" data-bs-toggle="modal"
+                        data-bs-target="#modalProjetos5">Visualizar projeto</button>
+                    </div>                    
                 </div>
             </div>
         </div>
@@ -133,8 +130,240 @@
 
     <script src="main.js"></script>
 
-    <!-- Modais Sites -->
+    <!-- Modais página projetos -->
+    <!-- Apps -->
+    <div class="modal fade" id="modalProjetos1" tabindex="-1" aria-labelledby="modalProjetosLexlink" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-titulo fs-5" id="modalProjetosLexlink">Lex Link Diligências</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="projetosCarouselModal">
+                        <button class="botaoModalVoltar">▲</button>
+                        <div class="projetosCarouselModal__track">
+                            <div class="trackModal__item">
+                                <img class="track__imagem" src="./assets/projetos/lex-link.png" alt="..."
+                                    style="width: 100px;">
+                            </div>
+                            <div class="trackModal__item">
+                                <img class="track__imagem" src="./assets/projetos/lex-link.jpeg" alt="..."
+                                    style="width: 100px;">
+                            </div>
+                            <div class="trackModal__item">
+                                <img class="track__imagem" src="./assets/projetos/lex-link.png" alt="..."
+                                    style="width: 100px;">
+                            </div>
+                            <div class="trackModal__item">
+                                <img class="track__imagem" src="./assets/projetos/lex-link.jpeg" alt="..."
+                                    style="width: 100px;">
+                            </div>
+                        </div>
+                        <button class="botaoModalAvancar">▼</button>
+                    </div>
+                    <div class="body__tecnologias">
+                        <div class="tecnologias">
+                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/react.png" alt="react">
+                            <p>React</p>
+                        </div>
+                        <div class="tecnologias">
+                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/react-native.png"
+                                alt="react native">
+                            <p>React Native</p>
+                        </div>
+                        <div class="tecnologias">
+                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/tailwind.png"
+                                alt="tailwind">
+                            <p>Tailwind</p>
+                        </div>
+                        <div class="tecnologias">
+                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/expo.png" alt="expo js">
+                            <p>Expo JS</p>
+                        </div>
+                        <div class="tecnologias">
+                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/node.png" alt="node js">
+                            <p>Node JS</p>
+                        </div>
+                        <div class="tecnologias">
+                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/express.png" alt="express">
+                            <p>Express JS</p>
+                        </div>
+                        <div class="tecnologias">
+                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/banco-de-dados.png"
+                                alt="banco de dados">
+                            <p>Banco de Dados</p>
+                        </div>
+                    </div>
+                    <div class="body__descricao">
+                        <h3 class="titulos-modal">Lex Link:</h3>
+                        <p>O Lex Link é uma plataforma web que aproxima empresas que precisam realizar diligências
+                            jurídicas de parceiros especializados prontos para executá-las, tudo de forma simples,
+                            organizada e supervisionada por um administrador.</p>
+                        <p>O sistema foi desenvolvido para eliminar falhas de comunicação e desorganização no fluxo de
+                            tarefas jurídicas. Ele centraliza todo o processo em um só ambiente: as empresas cadastram
+                            diligências, os parceiros demonstram interesse, e o administrador define quem executará cada
+                            tarefa, com notificações automáticas garantindo que todos acompanhem o andamento em tempo
+                            real.</p>
+                        <p>Continuo aprimorando o Lex Link para deixá-lo cada vez mais intuitivo, eficiente e agradável
+                            de usar, tornando a conexão entre empresas e parceiros uma experiência fluida e confiável.
+                        </p>
+                        <button onclick="window.open('https://mulheres-no-hip-hop.vercel.app/')">
+                            Acessar Projeto
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="modal fade" id="modalProjetos4" tabindex="-1" aria-labelledby="modalProjetosBlocos" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-titulo fs-5" id="modalProjetosBlocos">Blocos de Carnaval Bh</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="projetosCarouselModal">
+                        <button class="botaoModalVoltar">▲</button>
+                        <div class="projetosCarouselModal__track">
+                            <div class="trackModal__item">
+                                <img class="track__imagem" src="./assets/projetos/blocos-container1.png" alt="...">
+                            </div>
+                            <div class="trackModal__item">
+                                <img class="track__imagem" src="./assets/projetos/blocos-container2.png" alt="...">
+                            </div>
+                            <div class="trackModal__item">
+                                <img class="track__imagem" src="./assets/projetos/blocos-container3.png" alt="...">
+                            </div>
+                            <div class="trackModal__item">
+                                <img class="track__imagem" src="./assets/projetos/blocos-container4.png" alt="...">
+                            </div>
+                        </div>
+                        <button class="botaoModalAvancar">▼</button>
+                    </div>
+                    <div class="body__tecnologias">
+                        <div class="tecnologias">
+                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/react.png" alt="react">
+                            <p>React</p>
+                        </div>
+                        <div class="tecnologias">
+                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/react-native.png"
+                                alt="react native">
+                            <p>React Native</p>
+                        </div>
+                        <div class="tecnologias">
+                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/tailwind.png"
+                                alt="tailwind">
+                            <p>Tailwind</p>
+                        </div>
+                        <div class="tecnologias">
+                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/expo.png" alt="expo js">
+                            <p>Expo JS</p>
+                        </div>
+                        <div class="tecnologias">
+                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/banco-de-dados.png"
+                                alt="banco de dados">
+                            <p>Banco de Dados</p>
+                        </div>
+                    </div>
+                    <div class="body__descricao">
+                        <h3 class="titulos-modal">Lex Link:</h3>
+                        <p>O Blocos de Carnaval BH é um aplicativo leve e divertido que ajuda foliões a encontrarem os
+                            melhores blocos de rua durante o carnaval de Belo Horizonte.</p>
+                        <p>O sistema foi desenvolvido com React Native, integrando dados locais e APIs para exibir
+                            informações atualizadas sobre blocos, horários, locais e trajetos. O foco está na
+                            experiência mobile fluida, com navegação simples, pesquisa rápida e mapas interativos,
+                            garantindo que o usuário encontre o bloco certo no momento certo.</p>
+                        <p>O projeto segue em expansão, buscando oferecer cada vez mais funcionalidades e tornar a
+                            vivência do carnaval de BH mais conectada e organizada.</p>
+                        <button onclick="window.open('https://mulheres-no-hip-hop.vercel.app/')">
+                            Acessar Projeto
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalProjetos5" tabindex="-1" aria-labelledby="modalProjetosAcerto" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-titulo fs-5" id="modalProjetosAcerto">App Acerto de Contas</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="projetosCarouselModal">
+                        <button class="botaoModalVoltar">▲</button>
+                        <div class="projetosCarouselModal__track">
+                            <div class="trackModal__item">
+                                <img class="track__imagem" src="./assets/projetos/blocos-container1.png" alt="...">
+                            </div>
+                            <div class="trackModal__item">
+                                <img class="track__imagem" src="./assets/projetos/acerto-container2.png" alt="...">
+                            </div>
+                            <div class="trackModal__item">
+                                <img class="track__imagem" src="./assets/projetos/acerto-container3.png" alt="...">
+                            </div>
+                            <div class="trackModal__item">
+                                <img class="track__imagem" src="./assets/projetos/acerto-container4.png" alt="...">
+                            </div>
+                        </div>
+                        <button class="botaoModalAvancar">▼</button>
+                    </div>
+                    <div class="body__tecnologias">
+                        <div class="tecnologias">
+                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/react.png" alt="react">
+                            <p>React</p>
+                        </div>
+                        <div class="tecnologias">
+                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/react-native.png"
+                                alt="react native">
+                            <p>React Native</p>
+                        </div>
+                        <div class="tecnologias">
+                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/tailwind.png"
+                                alt="tailwind">
+                            <p>Tailwind</p>
+                        </div>
+                        <div class="tecnologias">
+                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/expo.png" alt="expo js">
+                            <p>Expo JS</p>
+                        </div>
+                    </div>
+                    <div class="body__descricao">
+                        <h3 class="titulos-modal">Acerto de contas:</h3>
+                        <p>é um aplicativo criado para ajudar pessoas a organizarem suas finanças
+                            pessoais de forma prática e visual, permitindo o controle de gastos e cobranças em um único
+                            lugar.</p>
+                        <p>O app foi desenvolvido em React Native com armazenamento local via AsyncStorage, permitindo
+                            ao usuário criar tabelas personalizadas com descrições, valores, prazos e anexos. Cada item
+                            pode ser marcado como quitado ou removido, e o sistema organiza automaticamente os dados em
+                            histórico e ativos, com foco em segurança e performance mesmo offline.</p>
+                        <p>Continuo otimizando o app com novas funcionalidades, transições suaves e uma experiência
+                            mobile-first cada vez mais intuitiva.</p>
+                        <!--
+                        <button onclick="window.open('https://mulheres-no-hip-hop.vercel.app/')">
+                            Acessar Projeto
+                        </button>   -->
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sites -->
     <div class="modal fade" id="modalProjetos2" tabindex="-1" aria-labelledby="modalProjetosQuiz" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -416,415 +645,7 @@
         </div>
     </div>
 
-    <!-- Modais Apps -->
-
-    <div class="modal fade" id="modalProjetos1" tabindex="-1" aria-labelledby="modalProjetosLexlink" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-titulo fs-5" id="modalProjetosLexlink">Lex Link Diligências</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="projetosCarouselModal">
-                        <button class="botaoModalVoltar">▲</button>
-                        <div class="projetosCarouselModal__track">
-                            <div class="trackModal__item">
-                                <img class="track__imagem" src="./assets/projetos/lex-link.png" alt="..."
-                                    style="width: 100px;">
-                            </div>
-                            <div class="trackModal__item">
-                                <img class="track__imagem" src="./assets/projetos/lex-link.jpeg" alt="..."
-                                    style="width: 100px;">
-                            </div>
-                            <div class="trackModal__item">
-                                <img class="track__imagem" src="./assets/projetos/lex-link.png" alt="..."
-                                    style="width: 100px;">
-                            </div>
-                            <div class="trackModal__item">
-                                <img class="track__imagem" src="./assets/projetos/lex-link.jpeg" alt="..."
-                                    style="width: 100px;">
-                            </div>
-                        </div>
-                        <button class="botaoModalAvancar">▼</button>
-                    </div>
-                    <div class="body__tecnologias">
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/react.png" alt="react">
-                            <p>React</p>
-                        </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/react-native.png"
-                                alt="react native">
-                            <p>React Native</p>
-                        </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/tailwind.png"
-                                alt="tailwind">
-                            <p>Tailwind</p>
-                        </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/expo.png" alt="expo js">
-                            <p>Expo JS</p>
-                        </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/node.png" alt="node js">
-                            <p>Node JS</p>
-                        </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/express.png" alt="express">
-                            <p>Express JS</p>
-                        </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/banco-de-dados.png"
-                                alt="banco de dados">
-                            <p>Banco de Dados</p>
-                        </div>
-                    </div>
-                    <div class="body__descricao">
-                        <h3 class="titulos-modal">Lex Link:</h3>
-                        <p>O Lex Link é uma plataforma web que aproxima empresas que precisam realizar diligências
-                            jurídicas de parceiros especializados prontos para executá-las, tudo de forma simples,
-                            organizada e supervisionada por um administrador.</p>
-                        <p>O sistema foi desenvolvido para eliminar falhas de comunicação e desorganização no fluxo de
-                            tarefas jurídicas. Ele centraliza todo o processo em um só ambiente: as empresas cadastram
-                            diligências, os parceiros demonstram interesse, e o administrador define quem executará cada
-                            tarefa, com notificações automáticas garantindo que todos acompanhem o andamento em tempo
-                            real.</p>
-                        <p>Continuo aprimorando o Lex Link para deixá-lo cada vez mais intuitivo, eficiente e agradável
-                            de usar, tornando a conexão entre empresas e parceiros uma experiência fluida e confiável.
-                        </p>
-                        <button onclick="window.open('https://mulheres-no-hip-hop.vercel.app/')">
-                            Acessar Projeto
-                        </button>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="modalProjetos4" tabindex="-1" aria-labelledby="modalProjetosBlocos" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-titulo fs-5" id="modalProjetosBlocos">Blocos de Carnaval Bh</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="projetosCarouselModal">
-                        <button class="botaoModalVoltar">▲</button>
-                        <div class="projetosCarouselModal__track">
-                            <div class="trackModal__item">
-                                <img class="track__imagem" src="./assets/projetos/blocos-container1.png" alt="...">
-                            </div>
-                            <div class="trackModal__item">
-                                <img class="track__imagem" src="./assets/projetos/blocos-container2.png" alt="...">
-                            </div>
-                            <div class="trackModal__item">
-                                <img class="track__imagem" src="./assets/projetos/blocos-container3.png" alt="...">
-                            </div>
-                            <div class="trackModal__item">
-                                <img class="track__imagem" src="./assets/projetos/blocos-container4.png" alt="...">
-                            </div>
-                        </div>
-                        <button class="botaoModalAvancar">▼</button>
-                    </div>
-                    <div class="body__tecnologias">
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/react.png" alt="react">
-                            <p>React</p>
-                        </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/react-native.png"
-                                alt="react native">
-                            <p>React Native</p>
-                        </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/tailwind.png"
-                                alt="tailwind">
-                            <p>Tailwind</p>
-                        </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/expo.png" alt="expo js">
-                            <p>Expo JS</p>
-                        </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/banco-de-dados.png"
-                                alt="banco de dados">
-                            <p>Banco de Dados</p>
-                        </div>
-                    </div>
-                    <div class="body__descricao">
-                        <h3 class="titulos-modal">Lex Link:</h3>
-                        <p>O Blocos de Carnaval BH é um aplicativo leve e divertido que ajuda foliões a encontrarem os
-                            melhores blocos de rua durante o carnaval de Belo Horizonte.</p>
-                        <p>O sistema foi desenvolvido com React Native, integrando dados locais e APIs para exibir
-                            informações atualizadas sobre blocos, horários, locais e trajetos. O foco está na
-                            experiência mobile fluida, com navegação simples, pesquisa rápida e mapas interativos,
-                            garantindo que o usuário encontre o bloco certo no momento certo.</p>
-                        <p>O projeto segue em expansão, buscando oferecer cada vez mais funcionalidades e tornar a
-                            vivência do carnaval de BH mais conectada e organizada.</p>
-                        <button onclick="window.open('https://mulheres-no-hip-hop.vercel.app/')">
-                            Acessar Projeto
-                        </button>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="modalProjetos5" tabindex="-1" aria-labelledby="modalProjetosAcerto" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-titulo fs-5" id="modalProjetosAcerto">App Acerto de Contas</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="projetosCarouselModal">
-                        <button class="botaoModalVoltar">▲</button>
-                        <div class="projetosCarouselModal__track">
-                            <div class="trackModal__item">
-                                <img class="track__imagem" src="./assets/projetos/blocos-container1.png" alt="...">
-                            </div>
-                            <div class="trackModal__item">
-                                <img class="track__imagem" src="./assets/projetos/acerto-container2.png" alt="...">
-                            </div>
-                            <div class="trackModal__item">
-                                <img class="track__imagem" src="./assets/projetos/acerto-container3.png" alt="...">
-                            </div>
-                            <div class="trackModal__item">
-                                <img class="track__imagem" src="./assets/projetos/acerto-container4.png" alt="...">
-                            </div>
-                        </div>
-                        <button class="botaoModalAvancar">▼</button>
-                    </div>
-                    <div class="body__tecnologias">
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/react.png" alt="react">
-                            <p>React</p>
-                        </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/react-native.png"
-                                alt="react native">
-                            <p>React Native</p>
-                        </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/tailwind.png"
-                                alt="tailwind">
-                            <p>Tailwind</p>
-                        </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/expo.png" alt="expo js">
-                            <p>Expo JS</p>
-                        </div>
-                    </div>
-                    <div class="body__descricao">
-                        <h3 class="titulos-modal">Acerto de contas:</h3>
-                        <p>é um aplicativo criado para ajudar pessoas a organizarem suas finanças
-                            pessoais de forma prática e visual, permitindo o controle de gastos e cobranças em um único
-                            lugar.</p>
-                        <p>O app foi desenvolvido em React Native com armazenamento local via AsyncStorage, permitindo
-                            ao usuário criar tabelas personalizadas com descrições, valores, prazos e anexos. Cada item
-                            pode ser marcado como quitado ou removido, e o sistema organiza automaticamente os dados em
-                            histórico e ativos, com foco em segurança e performance mesmo offline.</p>
-                        <p>Continuo otimizando o app com novas funcionalidades, transições suaves e uma experiência
-                            mobile-first cada vez mais intuitiva.</p>
-                        <!--
-                        <button onclick="window.open('https://mulheres-no-hip-hop.vercel.app/')">
-                            Acessar Projeto
-                        </button>   -->
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modais Experimentos -->
-    
-    <div class="modal fade" id="modalProjetos9" tabindex="-1" aria-labelledby="modalExperimentos1" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-titulo fs-5" id="modalExperimentos1">ABC do Professor</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="body__imagens">
-                        <img class="body__imagem hover-zoom" src="./assets/projetos/abc-container1.png"
-                            alt="Página do site Quiz Front-end">
-                        <img class="body__imagem hover-zoom" src="./assets/projetos/abc-container2.png"
-                            alt="Página do site Quiz Front-end">
-                    </div>
-                    <div class="body__tecnologias">
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/html5.png" alt="react">
-                            <p>Html</p>
-                        </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/css3.png"
-                                alt="react native">
-                            <p>Css</p>
-                        </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/tailwind.png"
-                                alt="tailwind">
-                            <p>Tailwind</p>
-                        </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/javascript.png"
-                                alt="tailwind">
-                            <p>JavaScript</p>
-                        </div>
-                    </div>
-                    <div class="body__descricao">
-                        <h3 class="titulos-modal">ABC do Professor:</h3>
-                        <p>O ABC do Professor é um projeto educacional que auxilia docentes na criação de atividades,
-                            planejamentos e recursos interativos voltados ao ensino infantil e fundamental.</p>
-                        <p>A plataforma foi desenvolvida com foco em usabilidade e organização de conteúdo, oferecendo
-                            seções para criação e personalização de materiais pedagógicos, além de recursos que utilizam
-                            JavaScript para manipulação dinâmica de dados e armazenamento local para salvar planos e
-                            atividades. Tudo foi pensado para facilitar o trabalho do professor de forma moderna e
-                            eficiente.</p>
-                        <p>Continuo evoluindo o ABC do Professor com novas ferramentas e ideias, sempre buscando tornar
-                            a rotina docente mais leve, criativa e produtiva.</p>
-                        <button onclick="window.open('https://abc-do-professor.vercel.app/')">
-                            Acessar Projeto
-                        </button>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="modalProjetos10" tabindex="-1" aria-labelledby="modalmodalExperimentos2" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-titulo fs-5" id="modalmodalExperimentos2">ABC do Professor</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="body__imagens">
-                        <img class="body__imagem hover-zoom" src="./assets/projetos/abc-container1.png"
-                            alt="Página do site Quiz Front-end">
-                        <img class="body__imagem hover-zoom" src="./assets/projetos/abc-container2.png"
-                            alt="Página do site Quiz Front-end">
-                    </div>
-                    <div class="body__tecnologias">
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/html5.png" alt="react">
-                            <p>Html</p>
-                        </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/css3.png"
-                                alt="react native">
-                            <p>Css</p>
-                        </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/tailwind.png"
-                                alt="tailwind">
-                            <p>Tailwind</p>
-                        </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/javascript.png"
-                                alt="tailwind">
-                            <p>JavaScript</p>
-                        </div>
-                    </div>
-                    <div class="body__descricao">
-                        <h3 class="titulos-modal">ABC do Professor:</h3>
-                        <p>O ABC do Professor é um projeto educacional que auxilia docentes na criação de atividades,
-                            planejamentos e recursos interativos voltados ao ensino infantil e fundamental.</p>
-                        <p>A plataforma foi desenvolvida com foco em usabilidade e organização de conteúdo, oferecendo
-                            seções para criação e personalização de materiais pedagógicos, além de recursos que utilizam
-                            JavaScript para manipulação dinâmica de dados e armazenamento local para salvar planos e
-                            atividades. Tudo foi pensado para facilitar o trabalho do professor de forma moderna e
-                            eficiente.</p>
-                        <p>Continuo evoluindo o ABC do Professor com novas ferramentas e ideias, sempre buscando tornar
-                            a rotina docente mais leve, criativa e produtiva.</p>
-                        <button onclick="window.open('https://abc-do-professor.vercel.app/')">
-                            Acessar Projeto
-                        </button>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="modalProjetos11" tabindex="-1" aria-labelledby="modalmodalExperimentos3" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-titulo fs-5" id="modalmodalExperimentos3">ABC do Professor</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="body__imagens">
-                        <img class="body__imagem hover-zoom" src="./assets/projetos/abc-container1.png"
-                            alt="Página do site Quiz Front-end">
-                        <img class="body__imagem hover-zoom" src="./assets/projetos/abc-container2.png"
-                            alt="Página do site Quiz Front-end">
-                    </div>
-                    <div class="body__tecnologias">
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/html5.png" alt="react">
-                            <p>Html</p>
-                        </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/css3.png"
-                                alt="react native">
-                            <p>Css</p>
-                        </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/tailwind.png"
-                                alt="tailwind">
-                            <p>Tailwind</p>
-                        </div>
-                        <div class="tecnologias">
-                            <img class="body__tecnologia__imagem" src="./assets/tecnologias/javascript.png"
-                                alt="tailwind">
-                            <p>JavaScript</p>
-                        </div>
-                    </div>
-                    <div class="body__descricao">
-                        <h3 class="titulos-modal">ABC do Professor:</h3>
-                        <p>O ABC do Professor é um projeto educacional que auxilia docentes na criação de atividades,
-                            planejamentos e recursos interativos voltados ao ensino infantil e fundamental.</p>
-                        <p>A plataforma foi desenvolvida com foco em usabilidade e organização de conteúdo, oferecendo
-                            seções para criação e personalização de materiais pedagógicos, além de recursos que utilizam
-                            JavaScript para manipulação dinâmica de dados e armazenamento local para salvar planos e
-                            atividades. Tudo foi pensado para facilitar o trabalho do professor de forma moderna e
-                            eficiente.</p>
-                        <p>Continuo evoluindo o ABC do Professor com novas ferramentas e ideias, sempre buscando tornar
-                            a rotina docente mais leve, criativa e produtiva.</p>
-                        <button onclick="window.open('https://abc-do-professor.vercel.app/')">
-                            Acessar Projeto
-                        </button>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    <!-- Outros -->
 </body>
 
 </html>
