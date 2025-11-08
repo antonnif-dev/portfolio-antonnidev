@@ -19,7 +19,7 @@
 .projetos {
   color: white;
   margin: 0 3px;
-  padding: 0 0.5rem;
+  padding: 0 0.3rem;
 }
 
 .projetosCarousel {
@@ -144,3 +144,45 @@
   border-radius: 8px;
   border: 1px solid #ccc;
 }
+
+.projetosApps {
+  display: flex;
+  flex-direction: column;  
+}
+
+.projetos__apps h1 {
+  font-size: 3rem;
+}
+
+.projetos__sites h1 {
+  font-size: 3rem;
+}
+
+.projetos__experimentais h1 {
+  font-size: 3rem;
+}
+
+.card__projetos {
+  display: flex;
+  gap: 1rem;
+}
+
+.track__imagem {
+  flex: 25%;
+  width: 12rem;
+  border-radius: 6px;
+  border: #000 solid 1px;
+}
+
+.trackProjetos__descricao {
+  flex: 70%;
+}
+
+.trackProjetos__descricao h5 {
+  font-size: var(--fs-titulos);
+}
+
+.trackProjetos__descricao p {
+  font-size: 1.2rem;
+}
+

@@ -1,16 +1,16 @@
-.servicos {
+#servicos {
   padding: 40px 20px 10px;
   text-align: center;
   padding: 1rem;
 }
 
-.servicos h2 {
+#servicos h2 {
   font-size: var(--fs-titulos);
   font-family: var(--fonte-titulos);
   margin-bottom: 15px;
 }
 
-.servicos .subtitulo {
+#servicos .subtitulo {
   font-size: var(--fs-media);
   font-family: var(--fonte-subtitulos);
   color: var(--cinza-subtitulo);

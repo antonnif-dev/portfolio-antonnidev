@@ -4,6 +4,7 @@
   "description": "Portfólio pessoal",
   "main": "main.js",
   "scripts": {
+    "postinstall": "chmod +x ./node_modules/.bin/tailwindcss",
     "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
     "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
     "build:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",

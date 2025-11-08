@@ -162,6 +162,17 @@
     width: 100%;
 }
 
+/* Estilizar fullscreen das imagens */
+img:fullscreen {
+    object-fit: contain;
+    /*border: #0026ff solid 4rem;*/
+    border-top: 4rem solid #0026ff;
+    border-bottom: 4rem solid #0026ff;
+    border-left: 6rem solid #0026ff;
+    border-right: 6rem solid #0026ff;
+    background: white !important;
+}
+
 /* Animações */
 
 .hover-zoom {

@@ -7,7 +7,7 @@
     <title>Portfólio AntonniF.</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="/tailwindcss">
 </head>
 
 <body data-bs-theme="light">
@@ -94,14 +94,14 @@
         </div>
     </div>
 
-    <section id="servicos" class="servicos">
+    <section id="servicos">
         <div class="servicos__container">
             <h2 class="titulos">O que eu posso criar:</h2>
             <p class="servicos__subtitulo">
                 Sites modernos, apps funcionais e soluções digitais que unem design, performance e acessibilidade.
             </p>
 
-            <div class="cards">
+            <div class="cards__servicos">
                 <div class="card">
                     <div class="icon bg-azul">🌐</div>
                     <h3>Criação de Sites</h3>
@@ -152,19 +152,19 @@
                         <div class="projetosCarouselModal__track">
                             <div class="trackModal__item">
                                 <img class="track__imagem" src="./assets/projetos/lex-link.png" alt="..."
-                                    style="width: 100px;">
+                                    style="width: 100px;" onclick="toggleFullscreen(this)">
                             </div>
                             <div class="trackModal__item">
                                 <img class="track__imagem" src="./assets/projetos/lex-link.jpeg" alt="..."
-                                    style="width: 100px;">
+                                    style="width: 100px;" onclick="toggleFullscreen(this)">
                             </div>
                             <div class="trackModal__item">
                                 <img class="track__imagem" src="./assets/projetos/lex-link.png" alt="..."
-                                    style="width: 100px;">
+                                    style="width: 100px;" onclick="toggleFullscreen(this)">
                             </div>
                             <div class="trackModal__item">
                                 <img class="track__imagem" src="./assets/projetos/lex-link.jpeg" alt="..."
-                                    style="width: 100px;">
+                                    style="width: 100px;" onclick="toggleFullscreen(this)">
                             </div>
                         </div>
                         <button class="botaoModalAvancar">▼</button>
@@ -236,11 +236,11 @@
                 </div>
                 <div class="modal-body">
                     <div class="body__imagens">
-                        <img class="body__imagem hover-zoom" src="./assets/projetos/quiz-container1.png"
-                            alt="Página do site Quiz Front-end">
+                        <img class="body__imagem hover-zoom rounded-lg cursor-pointer transition-transform duration-300 hover:scale-105" src="./assets/projetos/quiz-container1.png"
+                            alt="Página do site Quiz Front-end" onclick="toggleFullscreen(this)">
                         <!--
-                        <img class="body__imagem hover-zoom" src="./assets/projetos/quiz-container2.png"
-                            alt="Página do site Quiz Front-end">
+                        <img class="body__imagem hover-zoom rounded-lg cursor-pointer transition-transform duration-300 hover:scale-105" src="./assets/projetos/quiz-container2.png"
+                            alt="Página do site Quiz Front-end" onclick="toggleFullscreen(this)">
                         -->
                     </div>
                     <div class="body__tecnologias">
@@ -291,10 +291,10 @@
                 </div>
                 <div class="modal-body">
                     <div class="body__imagens">
-                        <img class="body__imagem hover-zoom" src="./assets/projetos/mulheres-container1.png"
-                            alt="Página do site Quiz Front-end">
-                        <img class="body__imagem hover-zoom" src="./assets/projetos/mulheres-no-hip-hop.jpeg"
-                            alt="Página do site Quiz Front-end">
+                        <img class="body__imagem hover-zoom rounded-lg cursor-pointer transition-transform duration-300 hover:scale-105" src="./assets/projetos/mulheres-container1.png"
+                            alt="Página do site Quiz Front-end" onclick="toggleFullscreen(this)">
+                        <img class="body__imagem hover-zoom rounded-lg cursor-pointer transition-transform duration-300 hover:scale-105" src="./assets/projetos/mulheres-no-hip-hop.jpeg"
+                            alt="Página do site Quiz Front-end" onclick="toggleFullscreen(this)">
                     </div>
                     <div class="body__tecnologias">
                         <div class="tecnologias">
@@ -352,16 +352,16 @@
                         <button class="botaoModalVoltar">▲</button>
                         <div class="projetosCarouselModal__track">
                             <div class="trackModal__item">
-                                <img class="track__imagem" src="./assets/projetos/blocos-container1.png" alt="...">
+                                <img class="track__imagem" src="./assets/projetos/blocos-container1.png" alt="..." onclick="toggleFullscreen(this)">
                             </div>
                             <div class="trackModal__item">
-                                <img class="track__imagem" src="./assets/projetos/blocos-container2.png" alt="...">
+                                <img class="track__imagem" src="./assets/projetos/blocos-container2.png" alt="..." onclick="toggleFullscreen(this)">
                             </div>
                             <div class="trackModal__item">
-                                <img class="track__imagem" src="./assets/projetos/blocos-container3.png" alt="...">
+                                <img class="track__imagem" src="./assets/projetos/blocos-container3.png" alt="..." onclick="toggleFullscreen(this)">
                             </div>
                             <div class="trackModal__item">
-                                <img class="track__imagem" src="./assets/projetos/blocos-container4.png" alt="...">
+                                <img class="track__imagem" src="./assets/projetos/blocos-container4.png" alt="..." onclick="toggleFullscreen(this)">
                             </div>
                         </div>
                         <button class="botaoModalAvancar">▼</button>
@@ -425,16 +425,16 @@
                         <button class="botaoModalVoltar">▲</button>
                         <div class="projetosCarouselModal__track">
                             <div class="trackModal__item">
-                                <img class="track__imagem" src="./assets/projetos/blocos-container1.png" alt="...">
+                                <img class="track__imagem" src="./assets/projetos/blocos-container1.png" alt="..." onclick="toggleFullscreen(this)">
                             </div>
                             <div class="trackModal__item">
-                                <img class="track__imagem" src="./assets/projetos/acerto-container2.png" alt="...">
+                                <img class="track__imagem" src="./assets/projetos/acerto-container2.png" alt="..." onclick="toggleFullscreen(this)">
                             </div>
                             <div class="trackModal__item">
-                                <img class="track__imagem" src="./assets/projetos/acerto-container3.png" alt="...">
+                                <img class="track__imagem" src="./assets/projetos/acerto-container3.png" alt="..." onclick="toggleFullscreen(this)">
                             </div>
                             <div class="trackModal__item">
-                                <img class="track__imagem" src="./assets/projetos/acerto-container4.png" alt="...">
+                                <img class="track__imagem" src="./assets/projetos/acerto-container4.png" alt="..." onclick="toggleFullscreen(this)">
                             </div>
                         </div>
                         <button class="botaoModalAvancar">▼</button>
@@ -492,10 +492,10 @@
                 </div>
                 <div class="modal-body">
                     <div class="body__imagens">
-                        <img class="body__imagem hover-zoom" src="./assets/projetos/doe-container1.png"
-                            alt="Página do site Quiz Front-end">
-                        <img class="body__imagem hover-zoom" src="./assets/projetos/doe-container2.png"
-                            alt="Página do site Quiz Front-end">
+                        <img class="body__imagem hover-zoom rounded-lg cursor-pointer transition-transform duration-300 hover:scale-105" src="./assets/projetos/doe-container1.png"
+                            alt="Página do site Quiz Front-end" onclick="toggleFullscreen(this)">
+                        <img class="body__imagem hover-zoom rounded-lg cursor-pointer transition-transform duration-300 hover:scale-105" src="./assets/projetos/doe-container2.png"
+                            alt="Página do site Quiz Front-end" onclick="toggleFullscreen(this)">
                     </div>
                     <div class="body__tecnologias">
                         <div class="tecnologias">
@@ -550,10 +550,10 @@
                 </div>
                 <div class="modal-body">
                     <div class="body__imagens">
-                        <img class="body__imagem hover-zoom" src="./assets/projetos/gerador-container1.png"
-                            alt="Página do site Quiz Front-end">
-                        <img class="body__imagem hover-zoom" src="./assets/projetos/gerador-container2.png"
-                            alt="Página do site Quiz Front-end">
+                        <img class="body__imagem hover-zoom rounded-lg cursor-pointer transition-transform duration-300 hover:scale-105" src="./assets/projetos/gerador-container1.png"
+                            alt="Página do site Quiz Front-end" onclick="toggleFullscreen(this)">
+                        <img class="body__imagem hover-zoom rounded-lg cursor-pointer transition-transform duration-300 hover:scale-105" src="./assets/projetos/gerador-container2.png"
+                            alt="Página do site Quiz Front-end" onclick="toggleFullscreen(this)">
                     </div>
                     <div class="body__tecnologias">
                         <div class="tecnologias">
@@ -602,10 +602,10 @@
                 </div>
                 <div class="modal-body">
                     <div class="body__imagens">
-                        <img class="body__imagem hover-zoom" src="./assets/projetos/abc-container1.png"
-                            alt="Página do site Quiz Front-end">
-                        <img class="body__imagem hover-zoom" src="./assets/projetos/abc-container2.png"
-                            alt="Página do site Quiz Front-end">
+                        <img class="body__imagem hover-zoom rounded-lg cursor-pointer transition-transform duration-300 hover:scale-105" src="./assets/projetos/abc-container1.png"
+                            alt="Página do site Quiz Front-end" onclick="toggleFullscreen(this)">
+                        <img class="body__imagem hover-zoom rounded-lg cursor-pointer transition-transform duration-300 hover:scale-105" src="./assets/projetos/abc-container2.png"
+                            alt="Página do site Quiz Front-end" onclick="toggleFullscreen(this)">
                     </div>
                     <div class="body__tecnologias">
                         <div class="tecnologias">
