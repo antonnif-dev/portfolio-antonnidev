@@ -3,7 +3,10 @@ module.exports = {
   corePlugins: {
     preflight: false,
   },
-  content: ["./*.html", "./js/**/*.js"],
+  content: [
+    "./public/**/*.html",
+    "./js/**/*.js"
+  ],
   darkMode: 'class',
   theme: {
     extend: {},
