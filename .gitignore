@@ -1,1 +1,24 @@
-node_modules
+# Dependências
+node_modules/
+package-lock.json
+
+# Build output
+dist/
+public/output.css
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ambiente
+.env
+.env.local
