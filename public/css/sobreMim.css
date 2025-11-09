@@ -1,32 +1,59 @@
-.sobreMim {
-  display: flex;
-  background-size: cover;
-  background-position: center;
+.sobreMim__container {
+  display: grid;
+  grid-template-columns: 185px 185px;
+  grid-template-rows: 180px 180px 180px;
+  grid-template-areas: "img sobreMim_texto1"
+    "sobreMim_texto2 descanso"
+    ". sobreMim_texto3";
   background-color: white !important;
   border: solid 1px rgba(128, 128, 128, 0.438);
   text-align: center;
   justify-content: center;
-  margin: 1rem;
   padding: 1rem;
-  font-size: 15px;
+  margin: 1rem;
+  font-size: 13px;
   border-radius: 0.5rem;
 }
 
-.sobreMim h1,
-.sobreMim p {
-  color: black !important;
-}
-
 .sobreMim__imagem {
-  width: 12rem;
+  width: 14rem;
+  height: 14rem;
 }
 
 .sobreMim h4 {
   font-size: var(--fs-media);
+  font-family: var(--fonte-subtitulos);
   color: black !important;
 }
 
- /* animação */
+.descanso {
+  position: relative;
+  top: 30%;
+  grid-area: descanso;
+  font-size: 8rem;
+  color: #888;
+  text-align: center;
+  align-self: center;
+}
+
+.img {
+  grid-area: img;
+}
+
+.sobreMim_texto1 {
+  grid-area: sobreMim_texto1;
+}
+
+.sobreMim_texto2 {
+  grid-area: sobreMim_texto2;
+}
+
+.sobreMim_texto3 {
+  grid-area: sobreMim_texto3;
+}
+
+
+/* animação */
 
 .animar {
   opacity: 0;

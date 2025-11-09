@@ -1,9 +1,36 @@
+//Carregar navbar
+document.addEventListener("DOMContentLoaded", async () => {
+  const navbarContainer = document.getElementById("navbar");
+  if (navbarContainer) {
+    try {
+      const response = await fetch("./navbar.html");
+      const html = await response.text();
+      navbarContainer.innerHTML = html;
+
+      if (typeof window.inicializarTema === "function") {
+        window.inicializarTema();
+      } else {        
+        const script = document.createElement("script");
+        script.src = "./tema.js";
+        script.onload = () => { if (typeof window.inicializarTema === "function") window.inicializarTema(); };
+        document.body.appendChild(script);
+      }
+    } catch (err) {
+      console.error("Erro ao carregar navbar:", err);
+    }
+  }
+  
+  const footerContainer = document.getElementById("footer");
+  if (footerContainer) {
+    try {
+      const resF = await fetch("./footer.html");
+      footerContainer.innerHTML = await resF.text();
+    } catch (err) { console.error("Erro ao carregar footer:", err); }
+  }
+});
 
 // CARROSSEL PRINCIPAL (Horizontal)
-
 const track = document.querySelector('.projetosCarousel__track');
-const botaoAvancar = document.getElementById('botaoAvancar');
-const botaoVoltar = document.getElementById('botaoVoltar');
 const itens = track ? Array.from(track.children) : [];
 
 // Embaralhar itens (Fisher-Yates)
@@ -46,16 +73,6 @@ function pararRolagem() {
   intervalId = null;
 }
 
-// Eventos dos botões
-if (botaoAvancar && botaoVoltar) {
-  botaoAvancar.addEventListener('click', avancar);
-  botaoVoltar.addEventListener('click', voltar);
-  botaoAvancar.addEventListener('mouseenter', () => iniciarRolagem('avancar'));
-  botaoAvancar.addEventListener('mouseleave', pararRolagem);
-  botaoVoltar.addEventListener('mouseenter', () => iniciarRolagem('voltar'));
-  botaoVoltar.addEventListener('mouseleave', pararRolagem);
-}
-
 // Drag horizontal (scroll suave)
 let isDown = false, startX, scrollLeftInicial;
 if (track) {
@@ -83,7 +100,6 @@ if (track) {
 }
 
 // CARROSSEL VERTICAL (Modal)
-
 const trackModal = document.querySelector('.projetosCarouselModal__track');
 const botaoModalAvancar = document.querySelector('.botaoModalAvancar');
 const botaoModalVoltar = document.querySelector('.botaoModalVoltar');
@@ -131,7 +147,6 @@ if (trackModal) {
 }
 
 // ANIMAÇÃO DE ELEMENTOS (IntersectionObserver)
-
 const observador = new IntersectionObserver((entradas) => {
   entradas.forEach((entrada) => {
     entrada.target.classList.toggle('animar-visivel', entrada.isIntersecting);
@@ -143,39 +158,6 @@ elementos.forEach((elemento) => {
   observador.observe(elemento);
 });
 
-// Modo Noturno / Light
-const body = document.body;
-const modoSwitch = document.getElementById("modoNoturno");
-
-// Função para aplicar tema
-function aplicarTema(tema) {
-  body.setAttribute("data-bs-theme", tema);
-  if (modoSwitch) modoSwitch.checked = tema === "dark";
-  localStorage.setItem("tema", tema);
-}
-
-// Inicializar tema salvo
-const temaSalvo = localStorage.getItem("tema") || "light";
-body.style.transition = "background-color 0.3s, color 0.3s";
-aplicarTema(temaSalvo);
-
-// Eventos de clique nos botões
-document.addEventListener("click", (e) => {
-  if (e.target.closest("#temaLight")) aplicarTema("light");
-  if (e.target.closest("#temaDark")) aplicarTema("dark");
-});
-
-// Transição suave
-body.style.transition = "background-color 0.3s, color 0.3s";
-
-// Evento do switch
-if (modoSwitch) {
-  modoSwitch.addEventListener("change", () => {
-    const temaAtual = modoSwitch.checked ? "dark" : "light";
-    aplicarTema(temaAtual);
-  });
-}
-
 function carregarComponente(seletor, arquivo) {
   fetch(arquivo)
     .then(response => response.text())
@@ -184,9 +166,7 @@ function carregarComponente(seletor, arquivo) {
       if (!container) throw new Error(`Seletor ${seletor} não encontrado`);
       container.innerHTML = data;
 
-      // Se for o navbar, reaplique o controle de tema e conecte o botão
       if (seletor === '#navbar') {
-        // Reaplicar toggle de tema após inserir o HTML
         const toggle = document.getElementById('modoNoturno');
         const theme = localStorage.getItem('theme') || 'light';
         document.body.setAttribute('data-bs-theme', theme);
@@ -202,7 +182,6 @@ function carregarComponente(seletor, arquivo) {
     .catch(err => console.error(`Erro ao carregar ${arquivo}:`, err));
 }
 
-// Carrega navbar e footer
 carregarComponente('#navbar', 'navbar.html');
 carregarComponente('#footer', 'footer.html');
 

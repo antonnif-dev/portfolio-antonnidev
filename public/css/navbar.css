@@ -56,7 +56,7 @@
 
 .navbar__itens {
   margin: 3px;
-  width: 30px;
+  width: 25px;
   height: auto;
 }
 
@@ -75,33 +75,35 @@
 }
 
 .tema-toggle {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.btn-tema {
-  background: none;
-  border: none;
-  cursor: pointer;
-  display: flex;
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: inherit;
-  transition: transform 0.2s;
 }
 
-.btn-tema svg {
-  width: 1.5rem;
-  height: 1.5rem;
+.tema-toggle i {
+  position: absolute;
+  opacity: 0;
+  transform: scale(0.9);
+  cursor: pointer;
+  color: #aaa;
+  font-size: 2.5rem;
 }
 
-.btn-tema:hover {
-  transform: scale(1.1);
+.tema-toggle i.ativo {
+  opacity: 1;
+  transform: scale(0.85);
+  color: #fbc531;
 }
 
-.btn-tema.oculto {
-  display: none;
+.tema-toggle i#temaLight.ativo {
+  color: #fbc531;
+}
+
+.tema-toggle i#temaDark.ativo {
+  color: #3d3f44; /* ou #000 */
 }
 
 
