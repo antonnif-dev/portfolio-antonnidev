@@ -75,6 +75,7 @@
     font-size: 3rem;
     text-align: center;
   }
+
   .track__item {
     flex: 0 0 calc((100% - 16px) / 3);
   }
@@ -99,6 +100,14 @@
   }
 }
 
+.projetosCarouselModal {
+  display: flex;
+}
+
+.projetosCarouselModal__track {
+  display: flex;
+}
+
 /* Página Projetos.html */
 
 .projetosAutorais h1 {
@@ -115,7 +124,7 @@
 
 .projetosApps {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
 }
 
 .projetos__apps h1 {
@@ -135,9 +144,14 @@
   gap: 1rem;
 }
 
+.cardProjetos__imagem {
+  width: 12rem;
+  height: 16rem;
+}
+
 .trackProjetos__descricao {
   flex: 70%;
-  align-items: center;  
+  align-items: center;
 }
 
 .trackProjetos__descricao h5 {
@@ -148,4 +162,3 @@
   font-size: 1.2rem;
   justify-content: center;
 }
-
