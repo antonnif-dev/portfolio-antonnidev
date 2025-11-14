@@ -90,12 +90,15 @@
   cursor: pointer;
   color: #aaa;
   font-size: 2.5rem;
+  pointer-events: none;
+  transition: opacity 0.2s, transform 0.2s, color 0.2s;
 }
 
 .tema-toggle i.ativo {
   opacity: 1;
   transform: scale(0.85);
   color: #fbc531;
+  pointer-events: auto;
 }
 
 .tema-toggle i#temaLight.ativo {
@@ -103,7 +106,7 @@
 }
 
 .tema-toggle i#temaDark.ativo {
-  color: #3d3f44; /* ou #000 */
+  color: #3d3f44;
 }
 
 
@@ -122,12 +125,12 @@
 
   .navbar__nomeCompleto {
     font-family: var(--fonte-subtitulos);
-    font-size: 4rem;
+    font-size: 2.5rem;
   }
 
   .navbar__itens {
     margin: 3px;
-    width: 3.5rem;
+    width: 1.8rem;
     height: auto;
   }
 
@@ -142,7 +145,7 @@
   }
 
   .navbar_subtitulo {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 
   .nav-link {

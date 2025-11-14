@@ -155,10 +155,10 @@
 }
 
 .trackProjetos__descricao h5 {
-  font-size: var(--fs-titulos);
+  font-size: var(--fs-media);
 }
 
 .trackProjetos__descricao p {
-  font-size: 1.2rem;
+  font-size: var(--fs-pequena);
   justify-content: center;
 }
